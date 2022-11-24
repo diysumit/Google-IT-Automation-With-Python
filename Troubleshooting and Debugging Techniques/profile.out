@@ -1,0 +1,6170 @@
+# callgrind format
+version: 1
+creator: pprofile
+event: usphit :microseconds/hit
+events: hits microseconds usphit
+cmd: ./send_reminders.py '2022-02-12|Review 1|ss3808@srmist.edu.in'
+fl=/usr/lib/python3.10/email/contentmanager.py
+fn=set_content:30
+30 1 3 3
+31 1 13 13
+cfl=/usr/lib/python3.10/email/message.py
+cfn=get_content_maintype:588
+calls=1 588
+31 1 85 85
+35 1 12 12
+cfl=/usr/lib/python3.10/email/contentmanager.py
+cfn=_find_set_handler:39
+calls=1 39
+35 1 369 369
+36 1 10 10
+cfl=/usr/lib/python3.10/email/message.py
+cfn=clear_content:1162
+calls=1 1162
+36 1 43 43
+37 1 13 13
+cfl=/usr/lib/python3.10/email/contentmanager.py
+cfn=set_text_content:181
+calls=1 181
+37 1 6243 6243
+fn=_find_set_handler:39
+39 1 348 348
+40 1 5 5
+41 1 5 5
+42 1 5 5
+43 1 4 4
+fn=set_text_content:181
+181 1 4 4
+184 1 13 13
+cfl=/usr/lib/python3.10/email/contentmanager.py
+cfn=_prepare_set:95
+calls=1 95
+184 1 1256 1256
+185 1 16 16
+cfl=/usr/lib/python3.10/email/contentmanager.py
+cfn=_encode_text:142
+calls=1 142
+185 1 183 183
+186 1 11 11
+cfl=/usr/lib/python3.10/email/message.py
+cfn=set_payload:303
+calls=1 303
+186 1 20 20
+187 2 21 10
+cfl=/usr/lib/python3.10/email/message.py
+cfn=set_param:701
+calls=1 701
+187 1 3963 3963
+188 1 5 5
+189 1 4 4
+190 1 13 13
+cfl=/usr/lib/python3.10/email/message.py
+cfn=__setitem__:393
+calls=1 393
+190 1 689 689
+191 1 12 12
+cfl=/usr/lib/python3.10/email/contentmanager.py
+cfn=_finalize_set:112
+calls=1 112
+191 1 26 26
+fn=_prepare_set:95
+95 1 5 5
+96 1 13 13
+cfl=/usr/lib/python3.10/email/message.py
+cfn=__setitem__:393
+calls=1 393
+96 1 1231 1231
+97 1 5 5
+fn=_encode_text:142
+142 1 6 6
+143 1 7 7
+144 1 7 7
+145 1 5 5
+146 1 5 5
+147 1 4 4
+149 1 60 60
+cfl=/usr/lib/python3.10/email/contentmanager.py
+cfn=<genexpr>:149
+calls=10 149
+149 10 61 6
+150 1 4 4
+151 1 12 12
+cfl=/usr/lib/python3.10/email/contentmanager.py
+cfn=normal_body:146
+calls=1 146
+151 1 9 9
+fn=normal_body:146
+146 2 9 4
+fn=<genexpr>:149
+149 20 61 3
+fn=_finalize_set:112
+112 1 5 5
+113 1 4 4
+115 1 3 3
+117 1 3 3
+122 1 5 5
+124 1 3 3
+fl=/usr/lib/python3.10/collections/__init__.py
+fn=namedtuple:328
+328 2 47 23
+354 2 23 11
+355 2 16 8
+356 2 17 8
+357 2 14 7
+359 2 12 6
+369 14 82 5
+370 12 68 5
+372 12 71 5
+375 12 71 5
+379 2 11 5
+380 12 68 5
+381 10 59 5
+384 10 55 5
+386 10 59 5
+388 2 11 5
+389 2 13 6
+397 2 17 8
+398 2 13 6
+399 2 13 6
+400 2 12 6
+402 2 94 47
+cfl=/usr/lib/python3.10/collections/__init__.py
+cfn=<genexpr>:402
+calls=12 402
+402 12 83 6
+403 2 13 6
+404 2 12 6
+408 2 11 5
+409 2 12 6
+410 2 11 5
+411 2 11 5
+413 2 12 6
+414 2 125 62
+cfl=<string>
+cfn=<module>:1
+calls=1 1
+414 1 12 12
+cfl=<string>_0
+cfn=<module>:1
+calls=1 1
+414 1 12 12
+415 2 12 6
+416 2 12 6
+417 2 10 5
+420 2 11 5
+421 2 13 6
+427 2 11 5
+430 2 12 6
+436 2 11 5
+439 2 10 5
+443 2 11 5
+447 2 10 5
+452 14 65 4
+453 2 10 5
+454 2 9 4
+455 2 11 5
+456 2 9 4
+457 2 10 5
+458 2 10 5
+460 12 74 6
+464 2 11 5
+465 2 9 4
+466 2 10 5
+467 2 10 5
+468 2 9 4
+469 2 10 5
+470 2 10 5
+471 2 9 4
+472 2 10 5
+473 2 10 5
+474 2 9 4
+475 2 11 5
+477 12 55 4
+478 10 50 5
+479 10 46 4
+481 2 31 15
+488 2 10 5
+489 2 9 4
+490 2 11 5
+493 2 11 5
+494 2 10 5
+496 2 9 4
+fn=<genexpr>:402
+402 24 83 3
+fl=/usr/lib/python3.10/sre_parse.py
+fn=parse:937
+937 7 24 3
+940 7 72 10
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:224
+calls=7 224
+940 7 397 56
+942 7 22 3
+943 7 63 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:76
+calls=7 76
+943 7 110 15
+944 7 23 3
+945 7 24 3
+947 7 21 3
+948 7 83 11
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_parse_sub:435
+calls=7 435
+948 7 22608 3229
+958 7 64 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=fix_flags:921
+calls=7 921
+958 7 138 19
+960 7 24 3
+964 7 25 3
+967 7 21 3
+fn=__init__:224
+224 9 27 3
+225 9 34 3
+226 9 28 3
+227 9 28 3
+229 9 29 3
+230 9 27 3
+231 9 27 3
+232 9 74 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__next:233
+calls=9 233
+232 9 243 27
+fn=__next:233
+233 142 393 2
+234 142 440 3
+235 142 418 2
+236 142 446 3
+237 11 35 3
+238 11 39 3
+239 11 36 3
+240 131 388 2
+241 18 52 2
+242 18 62 3
+243 18 59 3
+247 131 389 2
+248 131 383 2
+fn=__init__:76
+76 7 20 2
+77 7 24 3
+78 7 23 3
+79 7 22 3
+80 7 20 2
+fn=_parse_sub:435
+435 12 53 4
+438 12 53 4
+439 12 53 4
+440 12 49 4
+441 12 109 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=tell:286
+calls=12 286
+441 12 76 6
+442 20 82 4
+443 40 373 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_parse:493
+calls=20 493
+443 20 21566 1078
+444 20 77 3
+445 20 176 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=match:249
+calls=20 249
+445 20 420 21
+446 12 45 3
+448 12 50 4
+449 9 33 3
+451 3 27 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:111
+calls=3 111
+451 3 51 17
+454 3 12 4
+455 3 38 12
+456 7 29 4
+457 7 58 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__:160
+calls=7 160
+457 7 39 5
+459 7 25 3
+460 3 25 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__:164
+calls=3 164
+460 3 26 8
+461 4 32 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__:164
+calls=4 164
+461 4 33 8
+462 3 10 3
+470 3 11 3
+473 3 10 3
+474 3 11 3
+475 3 25 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__:160
+calls=3 160
+475 3 16 5
+476 3 11 3
+490 3 26 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=append:172
+calls=3 172
+490 3 16 5
+491 3 11 3
+fn=tell:286
+286 29 91 3
+287 29 96 3
+fn=_parse:493
+493 20 153 7
+495 20 277 13
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:111
+calls=20 111
+495 20 374 18
+498 20 150 7
+499 20 163 8
+500 20 174 8
+501 20 144 7
+502 20 142 7
+504 66 503 7
+506 66 455 6
+507 66 422 6
+508 7 48 6
+509 59 382 6
+510 13 90 6
+511 46 567 12
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=get:254
+calls=46 254
+511 46 1804 39
+513 46 306 6
+524 46 304 6
+525 10 139 13
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_escape:355
+calls=10 355
+525 10 187 18
+526 10 133 13
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=append:172
+calls=10 172
+526 10 63 6
+528 36 251 6
+529 17 239 14
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=append:172
+calls=17 172
+529 17 106 6
+531 19 130 6
+532 10 127 12
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=tell:286
+calls=10 286
+532 10 64 6
+534 10 70 7
+535 10 69 6
+538 10 68 6
+544 10 126 12
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=match:249
+calls=10 249
+544 10 93 9
+546 36 241 6
+547 36 440 12
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=get:254
+calls=36 254
+547 36 1370 38
+548 36 233 6
+551 36 229 6
+552 10 64 6
+553 26 168 6
+554 5 70 14
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_class_escape:295
+calls=5 295
+554 5 250 50
+556 21 134 6
+567 21 138 6
+568 26 323 12
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=match:249
+calls=26 249
+568 26 457 17
+570 8 136 17
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=get:254
+calls=8 254
+570 8 291 36
+571 8 55 6
+574 8 54 6
+580 8 51 6
+583 8 53 6
+590 8 51 6
+591 8 55 6
+594 8 52 6
+595 8 53 6
+596 8 51 6
+599 8 55 6
+601 18 117 6
+603 18 115 6
+605 10 131 13
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_uniq:432
+calls=10 432
+605 10 88 8
+607 10 67 6
+614 10 62 6
+618 10 130 13
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=append:172
+calls=10 172
+618 10 65 6
+620 9 61 6
+622 2 25 12
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=tell:286
+calls=2 286
+622 2 13 6
+623 2 15 7
+625 2 14 7
+626 1 7 7
+628 1 6 6
+629 1 7 7
+663 2 33 16
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__:160
+calls=2 160
+663 2 13 6
+664 2 30 15
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__:164
+calls=2 164
+664 2 61 30
+667 2 40 20
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__:160
+calls=2 160
+667 2 12 6
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__:164
+calls=2 164
+667 2 19 9
+670 2 28 14
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__:164
+calls=2 164
+670 2 18 9
+673 2 27 13
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__:164
+calls=2 164
+673 2 18 9
+677 2 28 14
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=match:249
+calls=2 249
+677 2 19 9
+680 2 36 18
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__setitem__:168
+calls=2 168
+680 2 16 8
+682 7 46 6
+683 1 14 14
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=append:172
+calls=1 172
+683 1 7 7
+685 6 40 6
+686 5 66 13
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=tell:286
+calls=5 286
+686 5 33 6
+687 5 38 7
+688 5 34 6
+689 5 35 7
+690 5 33 6
+691 5 66 13
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=match:249
+calls=5 249
+691 5 132 26
+693 3 38 12
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=get:254
+calls=3 254
+693 3 110 36
+694 3 22 7
+696 3 20 6
+698 3 39 13
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=match:249
+calls=3 249
+698 3 110 36
+700 3 42 14
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=getuntil:267
+calls=3 267
+700 3 322 107
+701 3 23 7
+827 5 33 6
+828 5 32 6
+829 5 70 14
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=opengroup:84
+calls=5 84
+829 5 243 48
+832 5 36 7
+834 5 82 16
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_parse_sub:435
+calls=5 435
+834 5 11995 2399
+835 5 77 15
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=match:249
+calls=5 249
+835 5 196 39
+838 5 35 7
+839 5 75 15
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=closegroup:96
+calls=5 96
+839 5 1159 231
+840 5 70 14
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=append:172
+calls=5 172
+840 5 31 6
+842 1 7 7
+843 1 17 17
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=append:172
+calls=1 172
+843 1 6 6
+852 64 589 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__:160
+calls=20 160
+852 20 128 6
+853 44 567 12
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__:164
+calls=44 164
+853 44 425 9
+854 44 280 6
+855 5 30 6
+856 5 31 6
+859 20 121 6
+fn=__init__:111
+111 25 79 3
+112 25 81 3
+113 25 77 3
+114 23 68 2
+115 25 75 3
+116 25 74 2
+fn=get:254
+254 100 314 3
+255 100 307 3
+256 100 746 7
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__next:233
+calls=100 233
+256 100 2191 21
+257 100 294 2
+fn=_escape:355
+355 10 42 4
+357 10 42 4
+358 10 36 3
+359 6 21 3
+360 4 15 3
+361 4 15 3
+362 4 13 3
+fn=append:172
+172 47 146 3
+173 47 150 3
+fn=__len__:160
+160 39 118 3
+161 39 123 3
+fn=__getitem__:164
+164 110 327 2
+165 110 342 3
+166 2 18 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:111
+calls=2 111
+166 2 30 15
+167 108 356 3
+fn=match:249
+249 71 215 3
+250 71 222 3
+251 27 205 7
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__next:233
+calls=27 233
+251 27 579 21
+252 27 80 2
+253 44 127 2
+fn=fix_flags:921
+921 7 20 2
+923 7 24 3
+924 7 24 3
+926 7 22 3
+927 7 23 3
+935 7 22 3
+fn=getwidth:174
+174 30 103 3
+176 30 115 3
+177 5 17 3
+178 25 107 4
+179 74 263 3
+180 49 169 3
+181 3 13 4
+182 3 10 3
+183 14 47 3
+184 11 97 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=getwidth:174
+calls=11 174
+184 11 746 67
+185 11 38 3
+186 11 38 3
+187 3 9 3
+188 3 10 3
+189 46 156 3
+193 46 157 3
+194 5 47 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=getwidth:174
+calls=5 174
+194 5 51 10
+195 5 18 3
+196 5 17 3
+197 41 144 3
+198 2 19 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=getwidth:174
+calls=2 174
+198 2 101 50
+199 2 8 4
+200 2 9 4
+201 39 146 3
+202 38 127 3
+203 38 137 3
+204 1 3 3
+208 1 6 6
+218 1 5 5
+220 25 107 4
+221 25 86 3
+fn=groups:81
+81 24 62 2
+83 24 78 3
+fn=opengroup:84
+84 5 19 3
+85 5 47 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=groups:81
+calls=5 81
+85 5 29 5
+86 5 18 3
+87 5 36 7
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=groups:81
+calls=5 81
+87 5 26 5
+89 5 15 3
+90 3 10 3
+91 3 9 3
+94 3 10 3
+95 5 19 3
+fn=__setitem__:168
+168 2 9 4
+169 2 7 3
+fn=closegroup:96
+96 5 16 3
+97 5 46 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=getwidth:174
+calls=5 174
+97 5 1096 219
+fn=_class_escape:295
+295 5 20 4
+297 5 19 3
+298 5 17 3
+299 1 4 4
+300 4 14 3
+301 4 16 4
+303 4 13 3
+304 4 15 3
+305 4 14 3
+311 4 14 3
+317 4 13 3
+325 4 14 3
+337 4 14 3
+345 4 13 3
+347 4 14 3
+348 4 14 3
+350 4 15 3
+fn=_uniq:432
+432 10 33 3
+433 10 55 5
+fn=parse_template:969
+969 2 10 5
+972 2 23 11
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:224
+calls=2 224
+972 2 123 61
+973 2 10 5
+974 2 9 4
+975 2 9 4
+976 2 11 5
+977 2 9 4
+978 2 9 4
+986 2 9 4
+987 7 32 4
+988 7 63 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=get:254
+calls=7 254
+988 7 278 39
+989 7 28 4
+990 2 7 3
+991 5 19 3
+993 3 12 4
+994 3 12 4
+1016 3 13 4
+1022 3 12 4
+1023 1 4 4
+1024 1 4 4
+1035 1 4 4
+1036 1 15 15
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=addgroup:978
+calls=1 978
+1036 1 28 28
+1038 2 8 4
+1039 2 9 4
+1043 2 8 4
+1045 2 8 4
+1046 2 7 3
+1047 1 4 4
+1048 2 10 5
+1052 2 9 4
+fn=addgroup:978
+978 1 3 3
+979 1 3 3
+981 1 3 3
+982 1 5 5
+983 1 4 4
+984 1 3 3
+985 1 3 3
+fn=getuntil:267
+267 3 12 4
+268 3 11 3
+269 6 20 3
+270 6 20 3
+271 6 47 7
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__next:233
+calls=6 233
+271 6 132 22
+272 6 20 3
+277 6 19 3
+278 3 8 2
+280 3 10 3
+281 3 11 3
+282 3 9 3
+fl=/usr/lib/python3.10/email/policy.py
+fn=header_max_count:100
+100 4 12 3
+106 4 48 12
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=__getitem__:590
+calls=4 590
+106 4 128 32
+fn=header_store_parse:131
+131 5 15 3
+141 5 18 3
+143 5 20 4
+148 5 53 10
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=__call__:594
+calls=5 594
+148 5 6342 1268
+fn=header_fetch_parse:150
+150 3 9 3
+159 3 27 9
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=name:205
+calls=3 205
+159 3 18 6
+160 3 10 3
+fl=/usr/lib/python3.10/encodings/idna.py
+fn=<module>:1
+1 1 8 8
+3 1 80 80
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+3 1 15440 15440
+4 1 25 25
+7 1 22 22
+cfl=/usr/lib/python3.10/re.py
+cfn=compile:249
+calls=1 249
+7 1 11401 11401
+10 1 7 7
+11 1 6 6
+14 1 6 6
+62 1 5 5
+105 1 5 5
+146 1 33 33
+cfl=/usr/lib/python3.10/encodings/idna.py
+cfn=Codec:146
+calls=1 146
+146 1 18 18
+218 1 27 27
+cfl=/usr/lib/python3.10/encodings/idna.py
+cfn=IncrementalEncoder:218
+calls=1 218
+218 1 12 12
+253 1 25 25
+cfl=/usr/lib/python3.10/encodings/idna.py
+cfn=IncrementalDecoder:253
+calls=1 253
+253 1 13 13
+292 1 26 26
+cfl=/usr/lib/python3.10/encodings/idna.py
+cfn=StreamWriter:292
+calls=1 292
+292 1 12 12
+295 1 26 26
+cfl=/usr/lib/python3.10/encodings/idna.py
+cfn=StreamReader:295
+calls=1 295
+295 1 11 11
+300 1 6 6
+fn=Codec:146
+146 2 10 5
+147 1 3 3
+184 1 4 4
+fn=encode:147
+147 1 3 3
+149 1 4 4
+153 1 4 4
+156 1 4 4
+157 1 5 5
+162 1 5 5
+163 1 4 4
+166 1 4 4
+168 1 4 4
+fn=IncrementalEncoder:218
+218 2 9 4
+219 1 3 3
+fn=IncrementalDecoder:253
+253 2 9 4
+254 1 3 3
+fn=StreamWriter:292
+292 2 9 4
+293 1 2 2
+fn=StreamReader:295
+295 2 9 4
+296 1 2 2
+fn=getregentry:300
+300 1 3 3
+301 2 16 8
+cfl=/usr/lib/python3.10/codecs.py
+cfn=__new__:94
+calls=1 94
+301 1 54 54
+302 1 3 3
+303 1 4 4
+304 1 5 5
+305 1 3 3
+306 1 2 2
+307 1 3 3
+308 1 3 3
+fl=/usr/lib/python3.10/locale.py
+fn=getlocale:587
+587 3 10 3
+600 3 24 8
+601 3 10 3
+603 3 28 9
+cfl=/usr/lib/python3.10/locale.py
+cfn=_parse_localename:479
+calls=3 479
+603 3 255 85
+fn=_parse_localename:479
+479 3 10 3
+493 3 33 11
+cfl=/usr/lib/python3.10/locale.py
+cfn=normalize:396
+calls=3 396
+493 3 171 57
+494 3 10 3
+503 3 9 3
+505 3 10 3
+506 3 9 3
+fn=normalize:396
+396 3 12 4
+413 3 13 4
+414 3 13 4
+417 3 11 3
+420 3 11 3
+421 3 10 3
+424 3 10 3
+425 3 11 3
+428 3 10 3
+429 3 10 3
+433 3 10 3
+434 3 9 3
+436 3 12 4
+437 3 10 3
+438 3 10 3
+fl=<frozen importlib._bootstrap>
+fn=_find_and_load:1022
+1022 16 116 7
+1024 32 496 15
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:165
+calls=16 165
+1024 16 160 10
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:169
+calls=16 169
+1024 16 2215 138
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:173
+calls=16 173
+1024 16 791 49
+cfl=<frozen importlib._bootstrap>
+cfn=cb:198
+calls=13 198
+1024 13 254 19
+1025 16 67 4
+1026 16 51 3
+1027 16 175 10
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load_unlocked:987
+calls=16 987
+1027 16 211173 13198
+cfl=<frozen importlib._bootstrap>
+cfn=cb:198
+calls=3 198
+1027 3 61 20
+fn=__init__:165
+165 16 49 3
+166 16 58 3
+167 16 53 3
+fn=__enter__:169
+169 16 43 2
+170 16 142 8
+cfl=<frozen importlib._bootstrap>
+cfn=_get_module_lock:179
+calls=16 179
+170 16 1244 77
+171 16 136 8
+cfl=<frozen importlib._bootstrap>
+cfn=acquire:100
+calls=16 100
+171 16 649 40
+fn=_get_module_lock:179
+179 16 50 3
+185 16 64 4
+186 16 51 3
+187 16 51 3
+188 16 71 4
+189 16 58 3
+190 16 57 3
+192 16 52 3
+193 16 53 3
+196 16 136 8
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:71
+calls=16 71
+196 16 364 22
+198 16 59 3
+209 16 65 4
+211 16 53 3
+213 16 50 3
+fn=__init__:71
+71 16 46 2
+72 16 62 3
+73 16 56 3
+74 16 50 3
+75 16 50 3
+76 16 46 2
+77 16 51 3
+fn=cb:198
+198 16 42 2
+199 16 64 4
+200 16 50 3
+204 16 54 3
+205 16 49 3
+207 16 53 3
+fn=acquire:100
+100 16 62 3
+106 16 56 3
+107 16 77 4
+108 16 48 3
+109 16 48 3
+110 32 111 3
+111 16 48 3
+112 16 49 3
+113 16 50 3
+114 16 47 2
+123 16 48 3
+fn=_find_and_load_unlocked:987
+987 16 59 3
+988 16 60 3
+989 16 71 4
+990 16 62 3
+991 4 14 3
+992 2 20 10
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed:233
+calls=2 233
+992 2 3886 1943
+994 2 9 4
+996 2 8 4
+997 2 7 3
+998 2 7 3
+1002 14 147 10
+cfl=<frozen importlib._bootstrap>
+cfn=_find_spec:921
+calls=14 921
+1002 14 27476 1962
+1003 14 64 4
+1004 1 10 10
+1006 13 139 10
+cfl=<frozen importlib._bootstrap>
+cfn=_load_unlocked:664
+calls=13 664
+1006 13 205452 15804
+1007 13 53 4
+1009 2 8 4
+1010 2 9 4
+1011 2 7 3
+1012 2 9 4
+1016 13 50 3
+fn=_find_spec:921
+921 14 52 3
+923 14 56 4
+924 14 55 3
+929 14 52 3
+935 14 54 3
+936 43 150 3
+937 84 713 8
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:893
+calls=42 893
+937 42 240 5
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:897
+calls=42 897
+937 42 262 6
+938 42 139 3
+939 42 159 3
+945 42 385 9
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec:746
+calls=14 746
+945 14 179 12
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec:826
+calls=14 826
+945 14 134 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:1422
+calls=14 1422
+945 14 24585 1756
+946 42 152 3
+948 13 53 4
+963 13 45 3
+965 1 3 3
+fn=__enter__:893
+893 42 105 2
+895 42 134 3
+fn=find_spec:746
+746 14 41 2
+748 14 44 3
+749 2 5 2
+750 12 52 4
+753 12 35 2
+fn=__exit__:897
+897 42 115 2
+899 42 146 3
+fn=find_spec:826
+826 14 39 2
+828 14 52 3
+831 14 42 3
+fn=_verbose_message:244
+244 239 657 2
+246 239 766 3
+fn=__init__:357
+357 14 58 4
+359 14 52 3
+360 14 47 3
+361 14 44 3
+362 14 41 2
+363 14 45 3
+366 14 43 3
+367 14 59 4
+fn=_load_unlocked:664
+664 13 44 3
+666 13 42 3
+668 13 47 3
+674 13 111 8
+cfl=<frozen importlib._bootstrap>
+cfn=module_from_spec:564
+calls=13 564
+674 13 5228 402
+679 13 42 3
+680 13 56 4
+681 13 46 3
+682 13 41 3
+683 13 44 3
+688 13 140 10
+cfl=<frozen importlib._bootstrap_external>
+cfn=exec_module:877
+calls=9 877
+688 9 203972 22663
+cfl=<frozen importlib._bootstrap_external>
+cfn=exec_module:1182
+calls=4 1182
+688 4 755 188
+699 13 69 5
+700 13 48 3
+701 13 120 9
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message:244
+calls=13 244
+701 13 96 7
+703 13 46 3
+705 13 42 3
+fn=module_from_spec:564
+564 13 37 2
+567 13 42 3
+568 13 46 3
+571 13 109 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=create_module:874
+calls=9 874
+571 9 51 5
+cfl=<frozen importlib._bootstrap_external>
+cfn=create_module:1174
+calls=4 1174
+571 4 1079 269
+575 13 41 3
+576 9 68 7
+cfl=<frozen importlib._bootstrap>
+cfn=_new_module:48
+calls=9 48
+576 9 61 6
+577 13 110 8
+cfl=<frozen importlib._bootstrap>
+cfn=_init_module_attrs:492
+calls=13 492
+577 13 3538 272
+578 13 41 3
+fn=_new_module:48
+48 9 24 2
+49 9 36 4
+fn=_init_module_attrs:492
+492 13 41 3
+496 13 48 3
+502 13 45 3
+503 13 44 3
+504 13 43 3
+525 13 40 3
+526 13 43 3
+530 13 44 3
+531 13 39 3
+532 13 113 8
+cfl=<frozen importlib._bootstrap>
+cfn=parent:404
+calls=13 404
+532 13 119 9
+536 13 41 3
+537 13 51 3
+541 13 82 6
+542 13 39 3
+548 13 107 8
+cfl=<frozen importlib._bootstrap>
+cfn=has_location:412
+calls=13 412
+548 13 77 5
+549 13 55 4
+550 13 42 3
+551 13 46 3
+555 13 52 4
+556 13 111 8
+cfl=<frozen importlib._bootstrap>
+cfn=cached:391
+calls=13 391
+556 13 1988 152
+557 9 30 3
+558 9 70 7
+cfl=<frozen importlib._bootstrap>
+cfn=cached:391
+calls=9 391
+558 9 75 8
+561 13 40 3
+fn=parent:404
+404 13 33 2
+407 13 42 3
+408 13 43 3
+fn=has_location:412
+412 13 35 2
+414 13 41 3
+fn=cached:391
+391 22 55 2
+393 22 67 3
+394 13 40 3
+395 13 40 3
+397 13 108 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_cached:510
+calls=13 510
+397 13 1682 129
+398 22 68 3
+fn=_call_with_frames_removed:233
+233 19 63 3
+241 19 1705 89
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=2 1022
+241 2 3873 1936
+cfl=/usr/lib/python3.10/copy.py
+cfn=<module>:1
+calls=1 1
+241 1 4683 4683
+cfl=/usr/lib/python3.10/email/generator.py
+cfn=<module>:1
+calls=1 1
+241 1 14835 14835
+cfl=/usr/lib/python3.10/hashlib.py
+cfn=<module>:1
+calls=1 1
+241 1 4242 4242
+cfl=/usr/lib/python3.10/hmac.py
+cfn=<module>:1
+calls=1 1
+241 1 17723 17723
+cfl=/usr/lib/python3.10/ssl.py
+cfn=<module>:1
+calls=1 1
+241 1 111900 111900
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=<module>:1
+calls=1 1
+241 1 160323 160323
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=<module>:1
+calls=1 1
+241 1 14094 14094
+cfl=/usr/lib/python3.10/stringprep.py
+cfn=<module>:1
+calls=1 1
+241 1 12097 12097
+cfl=/usr/lib/python3.10/encodings/idna.py
+cfn=<module>:1
+calls=1 1
+241 1 27224 27224
+fn=__exit__:173
+173 16 50 3
+174 16 144 9
+cfl=<frozen importlib._bootstrap>
+cfn=release:125
+calls=16 125
+174 16 597 37
+fn=release:125
+125 16 49 3
+126 16 62 3
+127 32 118 3
+128 16 51 3
+130 16 50 3
+131 16 54 3
+132 16 46 2
+133 16 110 6
+134 16 52 3
+fn=_handle_fromlist:1053
+1053 1 23 23
+1063 2 8 4
+1064 1 4 4
+1071 1 4 4
+1075 1 4 4
+1087 1 3 3
+fl=/usr/lib/python3.10/re.py
+fn=compile:249
+249 13 61 4
+251 13 119 9
+cfl=/usr/lib/python3.10/re.py
+cfn=_compile:288
+calls=13 288
+251 13 49848 3834
+fn=_compile:288
+288 13 42 3
+290 13 52 4
+291 3 30 10
+cfl=/usr/lib/python3.10/types.py
+cfn=__get__:176
+calls=3 176
+291 3 85 28
+292 13 45 3
+293 13 54 4
+294 7 27 3
+295 7 24 3
+296 7 25 3
+301 7 65 9
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=isstring:595
+calls=7 595
+301 7 52 7
+303 7 85 12
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=compile:759
+calls=7 759
+303 7 48495 6927
+304 7 69 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__and__:986
+calls=7 986
+304 7 615 87
+305 7 28 4
+311 7 25 3
+312 7 22 3
+fn=escape:269
+269 43 106 2
+273 43 132 3
+274 43 142 3
+fn=_subx:324
+324 8 25 3
+326 8 43 5
+cfl=/usr/lib/python3.10/re.py
+cfn=_compile_repl:314
+calls=2 314
+326 2 862 431
+327 8 28 3
+329 4 12 3
+330 4 14 3
+332 4 12 3
+fn=_compile_repl:314
+314 2 5 2
+317 2 24 12
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=parse_template:969
+calls=2 969
+317 2 832 416
+fl=/usr/lib/python3.10/socket.py
+fn=create_connection:808
+808 1 5 5
+822 1 14 14
+823 1 5 5
+824 3 23 7
+cfl=/usr/lib/python3.10/socket.py
+cfn=getaddrinfo:938
+calls=1 938
+824 1 30982 30982
+825 2 8 4
+826 2 7 3
+827 2 7 3
+828 2 21 10
+cfl=/usr/lib/python3.10/socket.py
+cfn=__init__:220
+calls=2 220
+828 2 68 34
+829 2 7 3
+831 2 6 3
+833 2 71 35
+838 2 9 4
+839 2 7 3
+840 2 7 3
+841 2 20 10
+cfl=/usr/lib/python3.10/socket.py
+cfn=close:498
+calls=2 498
+841 2 72 36
+843 1 3 3
+844 1 4 4
+845 1 5 5
+848 1 5 5
+fn=getaddrinfo:938
+938 1 5 5
+954 1 4 4
+955 3 691 230
+cfl=/usr/lib/python3.10/encodings/__init__.py
+cfn=search_function:71
+calls=1 71
+955 1 29989 29989
+cfl=/usr/lib/python3.10/encodings/idna.py
+cfn=encode:147
+calls=1 147
+955 1 40 40
+956 2 15 7
+957 4 28 7
+cfl=/usr/lib/python3.10/socket.py
+cfn=_intenum_converter:99
+calls=2 99
+957 2 95 47
+958 2 19 9
+cfl=/usr/lib/python3.10/socket.py
+cfn=_intenum_converter:99
+calls=2 99
+958 2 82 41
+959 2 7 3
+960 1 3 3
+fn=_intenum_converter:99
+99 4 11 2
+104 4 12 3
+105 4 35 8
+cfl=/usr/lib/python3.10/enum.py
+cfn=__call__:359
+calls=4 359
+105 4 117 29
+fn=__init__:220
+220 2 7 3
+225 2 8 4
+226 2 7 3
+228 2 6 3
+230 2 7 3
+232 2 16 8
+233 2 7 3
+234 2 6 3
+fn=close:498
+498 2 6 3
+500 2 6 3
+501 2 6 3
+502 2 33 16
+cfl=/usr/lib/python3.10/socket.py
+cfn=_real_close:494
+calls=2 494
+502 2 18 9
+fn=_real_close:494
+494 2 5 2
+496 2 12 6
+fl=/usr/lib/python3.10/email/generator.py
+fn=<module>:1
+1 1 15 15
+5 1 12 12
+7 1 8 8
+9 1 8 8
+10 1 9 9
+11 1 7 7
+12 1 7 7
+14 1 27 27
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+14 1 7820 7820
+15 1 24 24
+cfl=/usr/lib/python3.10/io.py
+cfn=__getattr__:60
+calls=1 60
+15 1 23 23
+16 1 9 9
+18 1 9 9
+19 1 7 7
+21 1 22 22
+cfl=/usr/lib/python3.10/re.py
+cfn=compile:249
+calls=1 249
+21 1 4021 4021
+22 1 27 27
+cfl=/usr/lib/python3.10/re.py
+cfn=compile:249
+calls=1 249
+22 1 2377 2377
+26 1 44 44
+cfl=/usr/lib/python3.10/email/generator.py
+cfn=Generator:26
+calls=1 26
+26 1 162 162
+396 1 32 32
+cfl=/usr/lib/python3.10/email/generator.py
+cfn=BytesGenerator:396
+calls=1 396
+396 1 53 53
+447 1 8 8
+449 1 29 29
+cfl=/usr/lib/python3.10/email/generator.py
+cfn=DecodedGenerator:449
+calls=1 449
+449 1 34 34
+508 1 8 8
+509 1 9 9
+512 1 8 8
+fn=Generator:26
+26 2 18 9
+27 1 4 4
+36 2 15 7
+37 1 5 5
+68 1 4 4
+72 1 6 6
+121 1 6 6
+141 1 5 5
+145 1 6 6
+149 1 6 6
+165 1 6 6
+204 1 5 5
+224 1 6 6
+234 1 5 5
+256 1 5 5
+258 1 6 6
+316 1 5 5
+327 1 6 6
+348 1 7 7
+373 1 5 5
+374 1 7 7
+391 1 5 5
+392 1 6 6
+fn=BytesGenerator:396
+396 2 13 6
+397 1 5 5
+409 1 4 4
+412 1 4 4
+415 1 4 4
+418 1 4 4
+426 1 4 4
+439 1 3 3
+441 1 4 4
+442 1 5 5
+fn=DecodedGenerator:449
+449 2 13 6
+450 1 3 3
+455 2 8 4
+456 1 6 6
+485 1 3 3
+fl=/usr/lib/python3.10/hmac.py
+fn=<module>:1
+1 2 22 11
+6 1 4 4
+7 1 6 6
+8 1 22 22
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+8 1 3229 3229
+14 1 8 8
+15 1 6 6
+17 1 20 20
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+17 1 7579 7579
+19 1 1652 1652
+cfl=/usr/lib/python3.10/hmac.py
+cfn=<genexpr>:19
+calls=257 19
+19 257 1689 6
+20 1 1663 1663
+cfl=/usr/lib/python3.10/hmac.py
+cfn=<genexpr>:20
+calls=257 20
+20 257 1672 6
+24 1 5 5
+27 1 41 41
+cfl=/usr/lib/python3.10/hmac.py
+cfn=HMAC:27
+calls=1 27
+27 1 86 86
+167 1 6 6
+187 1 5 5
+fn=<genexpr>:19
+19 514 1689 3
+fn=<genexpr>:20
+20 514 1672 3
+fn=HMAC:27
+27 2 12 6
+28 1 4 4
+32 1 4 4
+34 1 5 5
+38 1 4 4
+66 1 5 5
+71 1 4 4
+110 1 5 5
+111 1 5 5
+117 1 5 5
+122 1 12 12
+139 1 6 6
+151 1 5 5
+161 1 5 5
+fl=/usr/lib/python3.10/email/utils.py
+fn=_has_surrogates:51
+51 16 44 2
+56 16 50 3
+57 16 52 3
+58 16 46 2
+fn=_sanitize:64
+64 7 26 3
+69 7 26 3
+70 7 25 3
+fn=decode_params:260
+260 1 6 6
+265 1 5 5
+269 1 5 5
+270 1 5 5
+281 1 5 5
+306 1 4 4
+fl=/usr/lib/python3.10/sre_compile.py
+fn=isstring:595
+595 14 40 2
+596 14 53 3
+fn=compile:759
+759 7 26 3
+762 7 62 8
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=isstring:595
+calls=7 595
+762 7 40 5
+763 7 25 3
+764 7 78 11
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=parse:937
+calls=7 937
+764 7 23727 3389
+768 7 72 10
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_code:598
+calls=7 598
+768 7 24022 3431
+770 7 29 4
+775 7 27 3
+776 7 69 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=groups:81
+calls=7 81
+776 7 45 6
+777 10 45 4
+778 3 9 3
+780 14 62 4
+781 7 27 3
+782 7 56 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=groups:81
+calls=7 81
+782 7 40 5
+783 7 27 3
+fn=_code:598
+598 7 21 3
+600 7 23 3
+601 7 22 3
+604 7 69 9
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile_info:536
+calls=7 536
+604 7 9338 1334
+607 7 82 11
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile:71
+calls=7 71
+607 7 14416 2059
+609 7 25 3
+611 7 21 3
+fn=_compile_info:536
+536 7 29 4
+540 7 72 10
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=getwidth:174
+calls=7 174
+540 7 1147 163
+541 7 32 4
+543 7 29 4
+547 7 30 4
+548 7 27 3
+549 7 26 3
+550 7 27 3
+552 7 73 10
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_get_literal_prefix:461
+calls=7 461
+552 7 643 91
+554 7 25 3
+555 7 74 10
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_get_charset_prefix:492
+calls=7 492
+555 7 655 93
+561 7 28 4
+562 7 28 4
+563 7 29 4
+565 7 29 4
+566 7 25 3
+570 7 25 3
+571 4 15 3
+572 7 24 3
+574 7 23 3
+575 7 24 3
+579 7 28 4
+581 7 24 3
+589 7 22 3
+590 4 52 13
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_optimize_charset:276
+calls=4 276
+590 4 5789 1447
+591 4 15 3
+592 4 41 10
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile_charset:249
+calls=4 249
+592 4 189 47
+593 7 25 3
+fn=_get_literal_prefix:461
+461 9 39 4
+463 9 39 4
+464 9 40 4
+465 9 38 4
+466 9 86 9
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_get_iscased:453
+calls=9 453
+466 9 96 10
+467 9 40 4
+468 9 36 4
+469 1 5 5
+470 1 4 4
+472 8 32 4
+473 2 7 3
+474 2 22 11
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_combine_flags:65
+calls=2 65
+474 2 21 10
+475 2 8 4
+477 2 21 10
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_get_literal_prefix:461
+calls=2 461
+477 2 111 55
+478 2 7 3
+479 2 7 3
+480 2 7 3
+483 2 7 3
+484 2 7 3
+485 2 7 3
+487 6 23 3
+490 9 36 4
+fn=_get_iscased:453
+453 16 46 2
+454 16 51 3
+455 11 33 3
+456 5 15 3
+457 5 17 3
+fn=_get_charset_prefix:492
+492 7 26 3
+493 9 36 4
+494 9 33 3
+496 9 34 3
+497 9 34 3
+498 7 25 3
+499 2 7 3
+500 2 17 8
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_combine_flags:65
+calls=2 65
+500 2 19 9
+501 2 8 4
+504 7 59 8
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_get_iscased:453
+calls=7 453
+504 7 67 9
+505 7 27 3
+506 1 3 3
+507 1 4 4
+509 6 24 4
+510 1 3 3
+511 1 4 4
+512 4 15 3
+513 3 24 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__:160
+calls=3 160
+513 3 18 6
+515 3 24 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__:164
+calls=3 164
+515 3 26 8
+516 3 12 4
+517 3 11 3
+520 1 3 3
+521 5 17 3
+522 3 12 4
+523 3 11 3
+524 2 7 3
+525 1 7 7
+528 1 4 4
+533 3 11 3
+534 2 8 4
+fn=_optimize_charset:276
+276 20 97 4
+278 20 102 5
+279 20 94 4
+280 20 99 4
+281 20 93 4
+282 74 323 4
+283 56 234 4
+284 56 237 4
+285 56 251 4
+286 41 173 4
+295 41 182 4
+296 15 64 4
+297 8 39 4
+298 8 38 4
+299 8 34 4
+300 60 250 4
+301 52 219 4
+302 52 224 4
+308 8 31 3
+309 8 38 4
+313 7 35 5
+316 7 32 4
+317 2 11 5
+318 2 14 7
+320 2 61 30
+321 2 11 5
+331 54 259 4
+334 20 86 4
+335 20 88 4
+336 38 153 4
+337 38 186 4
+338 38 153 4
+339 16 61 3
+340 22 91 4
+341 4 16 4
+342 4 19 4
+343 18 78 4
+344 18 72 4
+347 18 75 4
+348 20 82 4
+350 26 108 4
+351 10 39 3
+352 2 8 4
+354 8 31 3
+355 16 68 4
+357 16 67 4
+358 1 4 4
+360 15 58 3
+363 4 17 4
+364 2 22 11
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_mk_bitmap:411
+calls=2 411
+364 2 225 112
+365 2 10 5
+366 2 9 4
+367 2 9 4
+389 2 36 18
+390 2 10 5
+391 2 10 5
+392 2 10 5
+393 2 9 4
+394 514 1878 3
+395 512 1933 3
+396 512 1924 3
+397 504 1930 3
+399 8 31 3
+400 8 30 3
+401 8 35 4
+402 2 26 13
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_mk_bitmap:411
+calls=2 411
+402 2 661 330
+403 2 26 13
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_bytes_to_codes:416
+calls=2 416
+403 2 49 24
+404 2 10 5
+405 2 8 4
+406 2 8 4
+fn=_compile_charset:249
+249 20 69 3
+251 20 69 3
+252 41 138 3
+253 21 67 3
+254 21 66 3
+256 21 65 3
+257 2 7 3
+258 19 60 3
+259 8 25 3
+260 8 25 3
+261 11 38 3
+262 2 7 3
+263 9 28 3
+264 2 8 4
+265 7 23 3
+266 7 21 3
+268 7 23 3
+269 7 23 3
+274 20 64 3
+fn=_compile:71
+71 25 134 5
+73 25 135 5
+74 25 136 5
+75 25 137 5
+76 25 134 5
+77 25 124 4
+78 25 126 5
+79 25 146 5
+80 25 125 5
+81 25 121 4
+82 25 127 5
+83 15 72 4
+84 15 74 4
+85 15 76 5
+86 15 72 4
+90 74 602 8
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__:164
+calls=46 164
+90 46 425 9
+91 49 236 4
+92 21 99 4
+93 9 42 4
+94 9 42 4
+95 12 57 4
+98 12 58 4
+99 8 36 4
+100 8 39 4
+102 4 19 4
+103 4 19 4
+106 4 20 5
+107 4 20 5
+108 4 19 4
+119 28 133 4
+120 16 191 11
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_optimize_charset:276
+calls=16 276
+120 16 7953 497
+121 16 84 5
+123 16 73 4
+124 16 73 4
+129 16 88 5
+130 16 166 10
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile_charset:249
+calls=16 249
+130 16 646 40
+131 16 78 4
+132 12 55 4
+133 1 4 4
+136 1 5 5
+137 11 53 4
+138 2 10 5
+140 2 23 11
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_simple:423
+calls=2 423
+140 2 87 43
+141 2 11 5
+142 2 10 5
+145 2 10 5
+146 2 10 5
+147 2 10 5
+148 2 29 14
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile:71
+calls=2 71
+148 2 479 239
+149 2 10 5
+150 2 9 4
+162 9 44 4
+163 5 23 4
+164 5 23 4
+165 5 24 4
+166 5 24 4
+168 5 95 19
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_combine_flags:65
+calls=5 65
+168 5 52 10
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile:71
+calls=5 71
+168 5 2908 581
+169 5 24 4
+170 5 23 4
+171 5 25 5
+172 4 20 5
+174 4 20 5
+187 4 19 4
+193 4 19 4
+194 1 4 4
+195 1 5 5
+196 1 6 6
+197 1 5 5
+199 1 11 11
+200 1 5 5
+201 1 5 5
+202 3 14 4
+203 3 15 5
+204 3 14 4
+205 3 14 4
+206 14 66 4
+207 11 51 4
+209 11 143 13
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile:71
+calls=11 71
+209 11 4465 405
+210 11 52 4
+211 11 53 4
+212 11 52 4
+213 3 14 4
+214 14 66 4
+215 11 49 4
+fn=_combine_flags:65
+65 9 30 3
+67 9 30 3
+69 9 32 3
+fn=_simple:423
+423 2 7 3
+425 2 18 9
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__:160
+calls=2 160
+425 2 12 6
+427 2 15 7
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__:164
+calls=2 164
+427 2 18 9
+428 2 6 3
+430 2 7 3
+fn=_mk_bitmap:411
+411 4 18 4
+412 4 28 7
+413 8 55 6
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=<listcomp>:413
+calls=4 413
+413 4 765 191
+414 4 19 4
+fn=<listcomp>:413
+413 168 529 3
+414 80 235 2
+fn=_bytes_to_codes:416
+416 2 8 4
+418 2 10 5
+419 2 8 4
+420 2 8 4
+421 2 13 6
+fl=/usr/lib/python3.10/types.py
+fn=__get__:176
+176 3 11 3
+177 3 14 4
+181 3 10 3
+183 3 27 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=value:801
+calls=3 801
+183 3 21 7
+fl=/usr/lib/python3.10/hashlib.py
+fn=<module>:1
+1 1 10 10
+5 1 14 14
+58 1 6 6
+64 1 7 7
+65 1 5 5
+67 1 6 6
+71 1 5 5
+78 1 5 5
+79 1 5 5
+82 1 5 5
+126 1 5 5
+144 1 5 5
+152 1 5 5
+169 1 4 4
+170 1 7 7
+171 1 5 5
+172 1 5 5
+173 2 473 236
+174 1 5 5
+180 1 6 6
+182 1 7 7
+250 1 5 5
+252 1 6 6
+257 15 62 4
+260 14 52 3
+261 14 162 11
+cfl=/usr/lib/python3.10/hashlib.py
+cfn=__get_openssl_constructor:126
+calls=14 126
+261 14 3337 238
+268 1 3 3
+269 1 5 5
+fn=__get_builtin_constructor:82
+82 2 8 4
+83 2 7 3
+84 2 10 5
+85 2 8 4
+86 1 3 3
+87 1 4 4
+88 1 4 4
+91 1 4 4
+94 1 4 4
+98 1 5 5
+102 1 7 7
+103 1 16 16
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+103 1 2926 2926
+104 1 8 8
+105 1 4 4
+119 1 5 5
+120 1 4 4
+121 1 4 4
+fn=__get_openssl_constructor:126
+126 14 50 3
+127 14 44 3
+129 2 20 10
+cfl=/usr/lib/python3.10/hashlib.py
+cfn=__get_builtin_constructor:82
+calls=2 82
+129 2 3037 1518
+130 12 36 3
+133 12 41 3
+137 12 70 5
+139 12 36 3
+fl=/usr/lib/python3.10/ssl.py
+fn=<module>:1
+1 1 46 46
+4 1 31 31
+93 1 25 25
+94 1 22 22
+95 1 59 59
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist:1053
+calls=1 1053
+95 1 49 49
+96 1 24 24
+98 1 66 66
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+98 1 3612 3612
+100 1 28 28
+101 1 23 23
+102 1 24 24
+106 1 22 22
+107 1 22 22
+108 1 21 21
+109 1 26 26
+110 1 22 22
+112 1 21 21
+115 1 24 24
+119 1 26 26
+122 2 99 49
+cfl=/usr/lib/python3.10/enum.py
+cfn=_convert_:536
+calls=1 536
+122 1 7953 7953
+123 1 21 21
+124 1 21 21
+125 1 21 21
+127 2 87 43
+cfl=/usr/lib/python3.10/enum.py
+cfn=_convert_:536
+calls=1 536
+127 1 11002 11002
+128 1 22 22
+129 1 21 21
+130 1 21 21
+132 2 89 44
+cfl=/usr/lib/python3.10/enum.py
+cfn=_convert_:536
+calls=1 536
+132 1 16805 16805
+133 1 24 24
+134 1 22 22
+135 1 21 21
+137 2 88 44
+cfl=/usr/lib/python3.10/enum.py
+cfn=_convert_:536
+calls=1 536
+137 1 8629 8629
+138 1 23 23
+139 1 23 23
+140 1 21 21
+142 2 81 40
+cfl=/usr/lib/python3.10/enum.py
+cfn=_convert_:536
+calls=1 536
+142 1 8255 8255
+143 1 24 24
+144 1 22 22
+145 1 21 21
+147 2 85 42
+cfl=/usr/lib/python3.10/enum.py
+cfn=_convert_:536
+calls=1 536
+147 1 6586 6586
+148 1 23 23
+149 1 21 21
+150 1 21 21
+152 1 48 48
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=1 470
+152 1 34 34
+153 1 99 99
+cfl=/usr/lib/python3.10/enum.py
+cfn=__members__:451
+calls=1 451
+153 1 25 25
+cfl=/usr/lib/python3.10/ssl.py
+cfn=<dictcomp>:153
+calls=1 153
+153 1 45 45
+155 1 59 59
+cfl=/usr/lib/python3.10/enum.py
+cfn=__getattr__:423
+calls=1 423
+155 1 65 65
+158 1 151 151
+cfl=/usr/lib/python3.10/enum.py
+cfn=__prepare__:165
+calls=1 165
+158 1 308 308
+cfl=/usr/lib/python3.10/ssl.py
+cfn=TLSVersion:158
+calls=1 158
+158 1 1209 1209
+cfl=/usr/lib/python3.10/enum.py
+cfn=__new__:180
+calls=1 180
+158 1 3425 3425
+168 1 160 160
+cfl=/usr/lib/python3.10/enum.py
+cfn=__prepare__:165
+calls=1 165
+168 1 297 297
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_TLSContentType:168
+calls=1 168
+168 1 1163 1163
+cfl=/usr/lib/python3.10/enum.py
+cfn=__new__:180
+calls=1 180
+168 1 3153 3153
+182 1 166 166
+cfl=/usr/lib/python3.10/enum.py
+cfn=__prepare__:165
+calls=1 165
+182 1 301 301
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_TLSAlertType:182
+calls=1 182
+182 1 5087 5087
+cfl=/usr/lib/python3.10/enum.py
+cfn=__new__:180
+calls=1 180
+182 1 11752 11752
+223 1 164 164
+cfl=/usr/lib/python3.10/enum.py
+cfn=__prepare__:165
+calls=1 165
+223 1 313 313
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_TLSMessageType:223
+calls=1 223
+223 1 3386 3386
+cfl=/usr/lib/python3.10/enum.py
+cfn=__new__:180
+calls=1 180
+223 1 7181 7181
+252 1 24 24
+255 1 30 30
+256 1 24 24
+257 1 22 22
+258 1 22 22
+259 1 23 23
+260 1 22 22
+263 1 21 21
+265 1 24 24
+267 1 23 23
+270 1 21 21
+272 1 21 21
+275 1 22 22
+324 1 22 22
+359 1 21 21
+371 1 21 21
+433 2 96 48
+cfl=/usr/lib/python3.10/collections/__init__.py
+cfn=namedtuple:328
+calls=1 328
+433 1 1096 1096
+434 1 21 21
+437 1 13 13
+451 1 114 114
+cfl=/usr/lib/python3.10/collections/__init__.py
+cfn=namedtuple:328
+calls=1 328
+451 1 782 782
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_ASN1Object:451
+calls=1 451
+451 1 59 59
+472 1 151 151
+cfl=/usr/lib/python3.10/enum.py
+cfn=__prepare__:165
+calls=1 165
+472 1 402 402
+cfl=/usr/lib/python3.10/ssl.py
+cfn=Purpose:472
+calls=1 472
+472 1 641 641
+cfl=/usr/lib/python3.10/enum.py
+cfn=__new__:180
+calls=1 180
+472 1 2645 2645
+479 1 96 96
+cfl=/usr/lib/python3.10/ssl.py
+cfn=SSLContext:479
+calls=1 479
+479 1 393 393
+740 2 47 23
+741 1 22 22
+778 2 38 19
+779 1 21 21
+780 1 21 21
+781 1 23 23
+833 1 12 12
+837 1 22 22
+840 1 72 72
+cfl=/usr/lib/python3.10/ssl.py
+cfn=SSLObject:840
+calls=1 840
+840 1 225 225
+995 1 22 22
+1001 1 85 85
+cfl=/usr/lib/python3.10/ssl.py
+cfn=SSLSocket:1001
+calls=1 1001
+1001 1 1029 1029
+1413 1 23 23
+1414 1 22 22
+1417 2 44 22
+1418 1 21 21
+1419 1 21 21
+1420 1 22 22
+1421 1 21 21
+1422 1 22 22
+1449 1 15 15
+1479 1 21 21
+1480 1 22 22
+1482 1 21 21
+1492 1 21 21
+1505 2 43 21
+1506 1 36 36
+1527 1 13 13
+fn=<lambda>:124
+124 254 694 2
+fn=<lambda>:129
+129 254 684 2
+fn=<lambda>:134
+134 254 684 2
+fn=<lambda>:139
+139 254 682 2
+fn=<lambda>:144
+144 254 686 2
+fn=<lambda>:149
+149 254 684 2
+fn=<dictcomp>:153
+153 8 45 5
+fn=TLSVersion:158
+158 2 39 19
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=2 89
+158 2 217 108
+159 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+159 1 130 130
+160 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+160 1 124 124
+161 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+161 1 123 123
+162 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+162 1 123 123
+163 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+163 1 125 125
+164 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+164 1 123 123
+165 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+165 1 129 129
+fn=_TLSContentType:168
+168 2 40 20
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=2 89
+168 2 201 100
+169 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+169 1 97 97
+173 1 19 19
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+173 1 128 128
+174 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+174 1 124 124
+175 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+175 1 123 123
+176 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+176 1 123 123
+178 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+178 1 123 123
+179 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+179 1 123 123
+fn=_TLSAlertType:182
+182 2 41 20
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=2 89
+182 2 207 103
+183 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+183 1 95 95
+187 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+187 1 125 125
+188 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+188 1 130 130
+189 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+189 1 124 124
+190 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+190 1 130 130
+191 1 12 12
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+191 1 124 124
+192 1 11 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+192 1 131 131
+193 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+193 1 130 130
+194 1 12 12
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+194 1 117 117
+195 1 11 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+195 1 126 126
+196 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+196 1 130 130
+197 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+197 1 130 130
+198 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+198 1 129 129
+199 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+199 1 129 129
+200 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+200 1 130 130
+201 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+201 1 123 123
+202 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+202 1 123 123
+203 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+203 1 127 127
+204 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+204 1 124 124
+205 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+205 1 129 129
+206 1 11 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+206 1 123 123
+207 1 12 12
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+207 1 129 129
+208 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+208 1 123 123
+209 1 11 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+209 1 144 144
+210 1 13 13
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+210 1 123 123
+211 1 11 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+211 1 124 124
+212 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+212 1 132 132
+213 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+213 1 130 130
+214 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+214 1 131 131
+215 1 11 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+215 1 129 129
+216 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+216 1 129 129
+217 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+217 1 130 130
+218 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+218 1 129 129
+219 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+219 1 132 132
+220 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+220 1 129 129
+fn=_TLSMessageType:223
+223 2 40 20
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=2 89
+223 2 199 99
+224 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+224 1 97 97
+228 1 11 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+228 1 128 128
+229 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+229 1 125 125
+230 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+230 1 124 124
+231 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+231 1 131 131
+232 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+232 1 133 133
+233 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+233 1 124 124
+234 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+234 1 130 130
+235 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+235 1 131 131
+236 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+236 1 124 124
+237 1 14 14
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+237 1 131 131
+238 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+238 1 129 129
+239 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+239 1 124 124
+240 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+240 1 123 123
+241 1 12 12
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+241 1 130 130
+242 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+242 1 125 125
+243 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+243 1 124 124
+244 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+244 1 123 123
+245 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+245 1 123 123
+246 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+246 1 138 138
+247 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+247 1 123 123
+248 1 11 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+248 1 124 124
+249 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+249 1 124 124
+fn=_ASN1Object:451
+451 2 28 14
+452 1 3 3
+454 1 3 3
+456 1 4 4
+459 1 5 5
+460 1 5 5
+465 1 3 3
+466 1 4 4
+fn=__new__:456
+456 4 13 3
+457 4 61 15
+cfl=<string>_0
+cfn=<lambda>:1
+calls=4 1
+457 4 27 6
+fn=Purpose:472
+472 2 39 19
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=2 89
+472 2 207 103
+473 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+473 1 95 95
+475 1 10 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+475 1 132 132
+476 1 12 12
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=1 89
+476 1 133 133
+fn=SSLContext:479
+479 2 33 16
+480 1 5 5
+482 1 7 7
+484 1 7 7
+485 1 7 7
+487 1 7 7
+498 1 8 8
+506 2 15 7
+507 1 7 7
+508 1 6 6
+509 1 7 7
+522 2 11 5
+523 1 6 6
+532 1 5 5
+548 1 6 6
+561 1 6 6
+572 1 7 7
+586 1 7 7
+594 1 9 9
+595 1 6 6
+596 1 7 7
+599 1 7 7
+600 1 7 7
+605 1 6 6
+606 1 8 8
+609 1 6 6
+610 1 7 7
+613 1 6 6
+614 1 6 6
+617 1 7 7
+618 1 8 8
+621 1 7 7
+622 1 7 7
+623 1 5 5
+627 1 7 7
+628 1 6 6
+638 1 7 7
+639 1 5 5
+677 1 7 7
+678 1 6 6
+715 1 6 6
+716 1 6 6
+719 1 6 6
+720 1 7 7
+723 1 6 6
+724 1 6 6
+727 1 7 7
+728 1 7 7
+735 1 6 6
+736 1 7 7
+fn=SSLObject:840
+840 2 30 15
+841 1 4 4
+855 1 5 5
+861 1 5 5
+862 2 13 6
+863 1 5 5
+873 1 4 4
+874 1 6 6
+878 1 5 5
+879 1 5 5
+882 1 6 6
+883 1 6 6
+887 1 5 5
+888 1 5 5
+891 1 5 5
+892 1 6 6
+896 1 6 6
+897 1 5 5
+901 1 5 5
+902 1 5 5
+907 1 5 5
+919 1 5 5
+927 1 5 5
+936 1 6 6
+946 1 5 5
+952 1 5 5
+957 1 5 5
+963 1 5 5
+968 1 5 5
+972 1 5 5
+976 1 5 5
+980 1 5 5
+986 1 5 5
+991 1 5 5
+fn=_sslcopydoc:995
+995 15 80 5
+997 15 53 3
+998 15 46 3
+fn=SSLSocket:1001
+1001 2 38 19
+1002 1 6 6
+1006 1 8 8
+1013 1 9 9
+1014 2 18 9
+1015 1 8 8
+1016 1 8 8
+1076 1 5 5
+1077 1 8 8
+1078 1 22 22
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1078 1 17 17
+1081 1 9 9
+1082 1 9 9
+1086 1 8 8
+1087 1 8 8
+1088 1 21 21
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1088 1 11 11
+1092 1 9 9
+1093 1 9 9
+1098 1 8 8
+1099 1 8 8
+1100 1 20 20
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1100 1 11 11
+1104 1 9 9
+1108 1 8 8
+1112 1 12 12
+1120 1 8 8
+1141 1 10 10
+1150 1 8 8
+1151 1 21 21
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1151 1 12 12
+1156 1 8 8
+1157 1 22 22
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1157 1 11 11
+1166 1 8 8
+1167 1 21 21
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1167 1 11 11
+1174 1 8 8
+1175 1 21 21
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1175 1 11 11
+1182 1 8 8
+1183 1 21 21
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1183 1 11 11
+1190 1 9 9
+1191 1 20 20
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1191 1 11 11
+1198 1 8 8
+1209 1 8 8
+1219 1 10 10
+1225 1 8 8
+1241 1 8 8
+1251 1 40 40
+1262 1 9 9
+1277 1 8 8
+1285 1 9 9
+1293 1 8 8
+1297 1 8 8
+1301 1 8 8
+1302 1 22 22
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1302 1 11 11
+1309 1 8 8
+1314 1 9 9
+1315 1 20 20
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1315 1 11 11
+1323 1 8 8
+1324 1 20 20
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1324 1 11 11
+1330 1 10 10
+1334 1 8 8
+1335 1 20 20
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1335 1 11 11
+1345 1 8 8
+1371 1 10 10
+1376 1 8 8
+1381 1 8 8
+1393 1 8 8
+1394 1 21 21
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1394 1 11 11
+1404 1 8 8
+1405 1 23 23
+cfl=/usr/lib/python3.10/ssl.py
+cfn=_sslcopydoc:995
+calls=1 995
+1405 1 11 11
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec:1422
+1422 14 42 3
+1428 14 56 4
+1429 12 43 3
+1430 14 134 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec:1390
+calls=14 1390
+1430 14 24141 1724
+1431 14 48 3
+1433 14 46 3
+1434 1 20 20
+1435 1 4 4
+1442 1 3 3
+1444 13 41 3
+fn=_get_spec:1390
+1390 14 48 3
+1395 14 52 3
+1396 58 201 3
+1397 57 209 3
+1399 57 504 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_importer_cache:1347
+calls=57 1347
+1399 57 1449 25
+1400 57 190 3
+1401 45 161 3
+1402 45 436 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:1527
+calls=45 1527
+1402 45 20495 455
+1405 45 154 3
+1406 32 103 3
+1407 13 40 3
+1408 13 43 3
+1418 1 12 12
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:357
+calls=1 357
+1418 1 28 28
+1419 1 6 6
+1420 1 3 3
+fn=_path_importer_cache:1347
+1347 57 157 2
+1355 57 183 3
+1362 57 171 3
+1363 57 191 3
+1364 1 4 4
+1365 1 12 12
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_hooks:1334
+calls=1 1334
+1365 1 559 559
+1366 1 4 4
+1367 57 165 2
+fn=_path_hooks:1334
+1334 1 4 4
+1337 1 4 4
+1339 2 8 4
+1340 2 6 3
+1341 2 23 11
+cfl=<frozen zipimport>
+cfn=__init__:64
+calls=1 64
+1341 1 89 89
+cfl=<frozen importlib._bootstrap_external>
+cfn=path_hook_for_FileFinder:1619
+calls=1 1619
+1341 1 413 413
+1342 1 4 4
+1343 1 4 4
+fn=_path_stat:140
+140 69 189 2
+147 69 576 8
+fn=path_hook_for_FileFinder:1619
+1619 1 5 5
+1621 1 10 10
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isdir:164
+calls=1 164
+1621 1 58 58
+1623 1 14 14
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__:1485
+calls=1 1485
+1623 1 324 324
+fn=_path_isdir:164
+164 1 4 4
+166 1 2 2
+168 1 11 11
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_is_mode_type:150
+calls=1 150
+168 1 40 40
+fn=_path_is_mode_type:150
+150 14 39 2
+152 14 43 3
+153 14 117 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat:140
+calls=14 140
+153 14 138 9
+156 14 50 3
+fn=__init__:1485
+1485 1 5 5
+1489 1 7 7
+1490 4 17 4
+1491 3 57 19
+cfl=<frozen importlib._bootstrap_external>
+cfn=<genexpr>:1491
+calls=8 1491
+1491 8 50 6
+1492 1 3 3
+1494 1 4 4
+1495 1 11 11
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isabs:180
+calls=1 180
+1495 1 8 8
+1496 1 15 15
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join:126
+calls=1 126
+1496 1 49 49
+1497 1 4 4
+1498 1 82 82
+1499 1 5 5
+fn=<genexpr>:1491
+1491 16 50 3
+fn=_path_isabs:180
+180 14 37 2
+182 14 64 4
+fn=_path_join:126
+126 219 575 2
+128 438 2319 5
+cfl=<frozen importlib._bootstrap_external>
+cfn=<listcomp>:128
+calls=219 128
+128 219 5223 23
+129 219 630 2
+fn=<listcomp>:128
+128 1350 3916 2
+129 456 1306 2
+fn=find_spec:1527
+1527 45 167 3
+1532 45 178 3
+1533 45 194 4
+1534 45 174 3
+1535 45 434 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat:140
+calls=45 140
+1535 45 508 11
+1538 45 189 4
+1539 1 13 13
+cfl=<frozen importlib._bootstrap_external>
+cfn=_fill_cache:1578
+calls=1 1578
+1539 1 63 63
+1540 1 5 5
+1542 45 383 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=_relax_case:71
+calls=45 71
+1542 45 253 5
+1546 45 178 3
+1547 45 162 3
+1549 45 192 4
+1561 232 832 3
+1562 200 678 3
+1563 200 1722 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join:126
+calls=200 126
+1563 200 7834 39
+1566 200 1702 8
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message:244
+calls=200 244
+1566 200 1149 5
+1567 200 769 3
+1568 13 113 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isfile:159
+calls=13 159
+1568 13 498 38
+1569 26 173 6
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec:1522
+calls=13 1522
+1569 13 1656 127
+1570 13 44 3
+1571 32 109 3
+1576 32 109 3
+fn=_fill_cache:1578
+1578 1 4 4
+1580 1 4 4
+1581 1 4 4
+1582 1 33 33
+1589 1 5 5
+1590 1 5 5
+1606 1 5 5
+fn=_relax_case:71
+71 45 115 2
+73 45 137 3
+fn=_path_isfile:159
+159 13 36 2
+161 13 113 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_is_mode_type:150
+calls=13 150
+161 13 348 26
+fn=_get_spec:1522
+1522 13 43 3
+1523 13 121 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__:1040
+calls=9 1040
+1523 9 96 10
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__:1163
+calls=4 1163
+1523 4 45 11
+1524 26 164 6
+cfl=<frozen importlib._bootstrap_external>
+cfn=spec_from_file_location:721
+calls=13 721
+1524 13 1145 88
+1525 13 40 3
+fn=__init__:1040
+1040 9 28 3
+1043 9 33 3
+1044 9 34 3
+fn=spec_from_file_location:721
+721 13 49 3
+733 13 49 3
+745 13 52 4
+746 13 125 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isabs:180
+calls=13 180
+746 13 92 7
+758 13 133 10
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:357
+calls=13 357
+758 13 365 28
+759 13 49 3
+762 13 45 3
+772 13 45 3
+783 13 42 3
+784 13 49 3
+789 13 44 3
+fn=create_module:874
+874 18 51 2
+fn=_get_cached:510
+510 13 35 2
+511 13 54 4
+512 9 28 3
+513 9 85 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source:380
+calls=9 380
+513 9 1453 161
+516 4 12 3
+519 4 13 3
+fn=cache_from_source:380
+380 18 71 3
+398 18 68 3
+405 18 75 4
+406 18 171 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_split:132
+calls=18 132
+406 18 661 36
+407 18 78 4
+408 18 75 4
+409 18 63 3
+411 18 75 4
+412 18 63 3
+413 18 66 3
+414 18 60 3
+417 18 64 3
+418 18 61 3
+422 18 67 3
+423 18 67 3
+448 18 158 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join:126
+calls=18 126
+448 18 864 48
+fn=_path_split:132
+132 18 57 3
+134 18 252 14
+cfl=<frozen importlib._bootstrap_external>
+cfn=<genexpr>:134
+calls=36 134
+134 36 225 6
+135 18 59 3
+137 18 66 3
+fn=<genexpr>:134
+134 72 225 3
+fn=exec_module:877
+877 9 27 3
+879 9 97 10
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_code:950
+calls=9 950
+879 9 6156 684
+880 9 29 3
+883 9 105 11
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed:233
+calls=9 233
+883 9 201731 22414
+fn=get_code:950
+950 9 40 4
+957 9 94 10
+cfl=<frozen importlib._bootstrap_external>
+cfn=_check_name_wrapper:542
+calls=9 542
+957 9 231 25
+958 9 40 4
+959 9 38 4
+960 9 36 4
+961 9 37 4
+962 9 34 3
+963 9 36 4
+964 9 90 10
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source:380
+calls=9 380
+964 9 1363 151
+968 9 37 4
+969 9 87 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=path_stats:1089
+calls=9 1089
+969 9 236 26
+973 9 40 4
+974 9 35 3
+975 9 97 10
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_data:1070
+calls=9 1070
+975 9 474 52
+979 9 35 3
+980 9 36 4
+981 9 34 3
+983 9 32 3
+984 9 87 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=_classify_pyc:585
+calls=9 585
+984 9 400 44
+985 9 54 6
+986 9 34 3
+987 9 32 3
+988 9 32 3
+989 18 66 3
+990 9 31 3
+992 9 87 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_data:1070
+calls=9 1070
+992 9 308 34
+993 18 139 7
+994 9 31 3
+995 9 31 3
+997 18 115 6
+cfl=<frozen importlib._bootstrap_external>
+cfn=_validate_hash_pyc:646
+calls=9 646
+997 9 60 6
+998 9 30 3
+1010 18 115 6
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message:244
+calls=9 244
+1010 9 59 6
+1011 9 33 3
+1012 18 119 6
+cfl=<frozen importlib._bootstrap_external>
+cfn=_compile_bytecode:670
+calls=9 670
+1012 9 1029 114
+1013 9 31 3
+1014 9 31 3
+fn=_check_name_wrapper:542
+542 9 29 3
+543 9 31 3
+545 9 30 3
+548 9 85 9
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_filename:1065
+calls=9 1065
+548 9 54 6
+fn=get_filename:1065
+1065 9 24 2
+1068 9 29 3
+fn=path_stats:1089
+1089 9 27 3
+1091 9 72 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat:140
+calls=9 140
+1091 9 101 11
+1092 9 35 3
+fn=get_data:1070
+1070 18 54 3
+1072 18 66 3
+1073 36 418 11
+1074 18 244 13
+fn=_classify_pyc:585
+585 9 57 6
+601 9 38 4
+602 9 33 3
+606 9 33 3
+610 9 79 8
+cfl=<frozen importlib._bootstrap_external>
+cfn=_unpack_uint32:84
+calls=9 84
+610 9 92 10
+612 9 34 3
+615 9 30 3
+fn=_unpack_uint32:84
+84 9 25 2
+86 9 29 3
+87 9 37 4
+fn=_validate_hash_pyc:646
+646 9 26 2
+663 9 33 3
+fn=_compile_bytecode:670
+670 9 26 2
+672 9 727 80
+673 9 42 4
+674 9 80 8
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message:244
+calls=9 244
+674 9 61 6
+675 9 30 3
+676 9 31 3
+677 9 29 3
+fn=__init__:1163
+1163 4 12 3
+1164 4 19 4
+1165 4 13 3
+fn=create_module:1174
+1174 4 14 3
+1176 8 71 8
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed:233
+calls=4 233
+1176 4 876 219
+1177 4 12 3
+1178 8 51 6
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message:244
+calls=4 244
+1178 4 27 6
+1179 4 13 3
+1180 4 11 2
+fn=exec_module:1182
+1182 4 10 2
+1184 4 60 15
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed:233
+calls=4 233
+1184 4 589 147
+1185 8 52 6
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message:244
+calls=4 244
+1185 4 29 7
+1186 4 14 3
+fl=/usr/lib/python3.10/io.py
+fn=__getattr__:60
+60 1 8 8
+61 1 9 9
+73 1 5 5
+fl=/usr/lib/python3.10/calendar.py
+fn=__getitem__:77
+77 14 39 2
+78 14 46 3
+79 14 44 3
+82 14 77 5
+fn=__getitem__:58
+58 26 70 2
+59 26 82 3
+60 26 79 3
+63 26 142 5
+cfl=/usr/lib/python3.10/calendar.py
+cfn=<lambda>:53
+calls=2 53
+63 2 12 6
+fn=<lambda>:53
+53 4 12 3
+fl=/usr/lib/python3.10/email/_header_value_parser.py
+fn=get_unstructured:1087
+1087 1 5 5
+1110 1 15 15
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=1 121
+1110 1 15 15
+1111 8 28 3
+1112 7 25 3
+1113 3 26 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_fws:1026
+calls=3 1026
+1113 3 105 35
+1114 3 12 4
+1115 3 10 3
+1116 4 14 3
+1117 4 17 4
+1139 4 22 5
+1146 4 18 4
+1148 4 36 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=4 876
+1148 4 68 17
+1149 4 34 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=_validate_xtext:986
+calls=4 986
+1149 4 127 31
+1150 4 16 4
+1151 4 15 3
+1152 1 3 3
+fn=__init__:121
+121 17 66 3
+122 17 68 4
+123 17 61 3
+fn=__new__:876
+876 22 66 3
+877 22 88 4
+878 22 72 3
+879 22 69 3
+880 22 67 3
+fn=_validate_xtext:986
+986 11 32 2
+989 11 41 3
+990 11 34 3
+992 11 92 8
+cfl=/usr/lib/python3.10/email/utils.py
+cfn=_has_surrogates:51
+calls=11 51
+992 11 134 12
+fn=get_fws:1026
+1026 4 13 3
+1034 4 14 3
+1035 4 35 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=4 876
+1035 4 65 16
+1036 4 13 3
+fn=__str__:125
+125 10 30 3
+126 10 203 20
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=<genexpr>:126
+calls=34 126
+126 34 826 24
+fn=<genexpr>:126
+126 68 232 3
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__str__:125
+calls=5 125
+126 5 139 27
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__str__:796
+calls=1 796
+126 1 512 512
+fn=parse_content_type_header:2621
+2621 2 9 4
+2628 2 20 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=2 121
+2628 2 23 11
+2629 2 7 3
+2630 2 7 3
+2634 2 7 3
+2635 2 17 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_token:2254
+calls=2 2254
+2635 2 288 144
+2641 2 7 3
+2644 2 5 2
+2650 2 20 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=value:132
+calls=2 132
+2650 2 103 51
+2651 2 19 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=2 876
+2651 2 32 16
+2652 2 7 3
+2653 2 7 3
+2654 2 18 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_token:2254
+calls=2 2254
+2654 2 245 122
+2660 2 7 3
+2661 2 17 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=value:132
+calls=2 132
+2661 2 93 46
+2662 2 7 3
+2663 1 3 3
+2664 1 3 3
+2674 1 13 13
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=1 876
+2674 1 15 15
+2675 1 12 12
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=parse_mime_parameters:2553
+calls=1 2553
+2675 1 906 906
+2676 1 4 4
+fn=get_token:2254
+2254 5 18 3
+2263 5 42 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=5 121
+2263 5 54 10
+2264 5 18 3
+2267 5 16 3
+2270 5 42 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_ttext:2235
+calls=5 2235
+2270 5 420 84
+2271 5 17 3
+2272 5 16 3
+2275 5 14 2
+fn=get_ttext:2235
+2235 5 13 2
+2244 5 26 5
+2245 5 16 3
+2248 5 20 4
+2249 5 19 3
+2250 5 41 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=5 876
+2250 5 80 16
+2251 5 39 7
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=_validate_xtext:986
+calls=5 986
+2251 5 147 29
+2252 5 15 3
+fn=value:132
+132 7 20 2
+134 7 103 14
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=<genexpr>:134
+calls=16 134
+134 16 284 17
+fn=<genexpr>:134
+134 32 180 5
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=value:925
+calls=14 925
+134 14 78 5
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=value:184
+calls=4 184
+134 4 25 6
+fn=value:925
+925 14 36 2
+927 14 42 3
+fn=all_defects:136
+136 16 44 2
+138 16 259 16
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=<genexpr>:138
+calls=43 138
+138 43 668 15
+fn=<genexpr>:138
+138 86 382 4
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=all_defects:888
+calls=15 888
+138 15 84 5
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=all_defects:136
+calls=12 136
+138 12 484 40
+fn=all_defects:888
+888 15 38 2
+890 15 46 3
+fn=params:813
+813 4 14 3
+815 10 33 3
+816 8 25 3
+817 2 6 3
+818 2 5 2
+fn=parse_mime_parameters:2553
+2553 1 5 5
+2566 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=1 121
+2566 1 10 10
+2567 2 8 4
+2568 1 4 4
+2569 1 12 12
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_parameter:2411
+calls=1 2411
+2569 1 836 836
+2570 1 5 5
+2590 1 4 4
+2599 1 4 4
+2603 1 3 3
+fn=get_parameter:2411
+2411 1 6 6
+2422 1 13 13
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=1 121
+2422 1 11 11
+2423 1 11 11
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_attribute:2296
+calls=1 2296
+2423 1 250 250
+2424 1 5 5
+2425 1 5 5
+2429 1 5 5
+2442 1 4 4
+2444 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=1 876
+2444 1 17 17
+2445 1 6 6
+2446 1 5 5
+2447 1 5 5
+2450 1 4 4
+2451 1 4 4
+2452 1 4 4
+2489 1 4 4
+2492 1 11 11
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_value:2389
+calls=1 2389
+2492 1 422 422
+2493 1 4 4
+2494 1 5 5
+2495 1 5 5
+2496 1 5 5
+2499 1 4 4
+fn=get_attribute:2296
+2296 1 4 4
+2305 1 9 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=1 121
+2305 1 9 9
+2306 1 4 4
+2307 1 12 12
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_cfws:1270
+calls=1 1270
+2307 1 88 88
+2308 1 3 3
+2309 1 4 4
+2312 1 11 11
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_attrtext:2277
+calls=1 2277
+2312 1 91 91
+2313 1 3 3
+2314 1 3 3
+2317 1 3 3
+fn=get_cfws:1270
+1270 1 3 3
+1274 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=1 121
+1274 1 10 10
+1275 2 7 3
+1276 1 4 4
+1277 1 8 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_fws:1026
+calls=1 1026
+1277 1 36 36
+1280 1 4 4
+1281 1 3 3
+fn=get_attrtext:2277
+2277 1 3 3
+2286 1 5 5
+2287 1 3 3
+2290 1 4 4
+2291 1 5 5
+2292 1 9 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=1 876
+2292 1 16 16
+2293 1 9 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=_validate_xtext:986
+calls=1 986
+2293 1 30 30
+2294 1 2 2
+fn=get_value:2389
+2389 1 4 4
+2393 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=1 121
+2393 1 11 11
+2394 1 3 3
+2396 1 5 5
+2397 1 3 3
+2399 1 3 3
+2402 1 3 3
+2403 1 9 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_quoted_string:1283
+calls=1 1283
+2403 1 351 351
+2406 1 3 3
+2408 1 3 3
+2409 1 6 6
+fn=get_quoted_string:1283
+1283 1 3 3
+1290 1 11 11
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=1 121
+1290 1 10 10
+1291 1 3 3
+1294 1 13 13
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_bare_quoted_string:1202
+calls=1 1202
+1294 1 298 298
+1295 1 4 4
+1296 1 3 3
+1299 1 3 3
+fn=get_bare_quoted_string:1202
+1202 1 5 5
+1209 1 4 4
+1212 1 9 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=1 121
+1212 1 15 15
+1213 1 3 3
+1214 1 4 4
+1217 2 7 3
+1218 1 4 4
+1220 1 3 3
+1237 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_qcontent:1171
+calls=1 1171
+1237 1 218 218
+1238 1 4 4
+1239 1 3 3
+1243 1 4 4
+fn=get_qcontent:1171
+1171 1 3 3
+1181 1 12 12
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=_get_ptext_to_endchars:996
+calls=1 996
+1181 1 132 132
+1182 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=1 876
+1182 1 17 17
+1183 1 8 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=_validate_xtext:986
+calls=1 986
+1183 1 29 29
+1184 1 3 3
+fn=_get_ptext_to_endchars:996
+996 1 4 4
+1005 1 6 6
+1006 1 5 5
+1007 1 5 5
+1008 1 4 4
+1009 6 21 3
+1010 6 20 3
+1017 6 18 3
+1019 6 19 3
+1020 1 3 3
+1021 5 18 3
+1024 1 4 4
+fn=__str__:796
+796 1 4 4
+797 1 4 4
+798 2 23 11
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=params:726
+calls=2 726
+798 2 447 223
+799 1 3 3
+800 1 13 13
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=quote_string:96
+calls=1 96
+800 1 9 9
+803 1 3 3
+804 1 4 4
+fn=params:726
+726 3 18 6
+733 2 9 4
+734 4 18 4
+735 2 10 5
+737 2 10 5
+739 2 20 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=value:132
+calls=2 132
+739 2 161 80
+740 2 9 4
+741 2 8 4
+742 2 23 11
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=section_number:664
+calls=2 664
+742 2 15 7
+743 4 18 4
+744 2 23 11
+745 2 9 4
+746 2 13 6
+750 2 8 4
+757 2 9 4
+758 2 8 4
+759 4 17 4
+760 2 7 3
+771 2 7 3
+772 2 20 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=param_value:670
+calls=2 670
+772 2 305 152
+773 2 7 3
+792 2 8 4
+793 2 7 3
+794 4 18 4
+fn=value:184
+184 4 11 2
+186 4 13 3
+fn=section_number:664
+664 2 8 4
+668 2 7 3
+fn=param_value:670
+670 2 7 3
+673 6 34 5
+674 6 18 3
+675 2 15 7
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=stripped_value:710
+calls=2 710
+675 2 216 108
+676 4 11 2
+fn=stripped_value:710
+710 2 7 3
+712 2 51 25
+713 2 9 4
+715 4 17 4
+716 2 6 3
+717 2 17 8
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=stripped_value:244
+calls=2 244
+717 2 105 52
+fn=stripped_value:244
+244 2 6 3
+246 2 7 3
+247 2 6 3
+248 2 18 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=value:258
+calls=2 258
+248 2 66 33
+fn=value:258
+258 2 7 3
+260 2 30 15
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=<genexpr>:260
+calls=4 260
+260 4 28 7
+fn=<genexpr>:260
+260 8 28 3
+fn=quote_string:96
+96 1 3 3
+97 1 5 5
+fn=parse_content_transfer_encoding_header:2708
+2708 1 4 4
+2713 1 12 12
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=1 121
+2713 1 11 11
+2714 1 4 4
+2718 1 3 3
+2719 1 9 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_token:2254
+calls=1 2254
+2719 1 129 129
+2724 1 4 4
+2725 1 11 11
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=value:132
+calls=1 132
+2725 1 48 48
+2726 1 4 4
+2727 1 10 10
+fn=parse_mime_version:2149
+2149 1 4 4
+2155 1 11 11
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__init__:121
+calls=1 121
+2155 1 13 13
+2156 1 4 4
+2160 1 4 4
+2166 1 4 4
+2167 2 8 4
+2168 1 4 4
+2169 1 4 4
+2170 1 4 4
+2175 1 5 5
+2176 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=1 876
+2176 1 18 18
+2177 1 4 4
+2180 1 4 4
+2187 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=1 876
+2187 1 15 15
+2188 1 3 3
+2189 1 5 5
+2192 1 3 3
+2197 1 3 3
+2198 2 7 3
+2199 1 3 3
+2200 1 3 3
+2201 1 3 3
+2206 1 4 4
+2207 1 9 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__new__:876
+calls=1 876
+2207 1 17 17
+2208 1 3 3
+2211 1 5 5
+2215 1 3 3
+fl=/usr/lib/python3.10/stringprep.py
+fn=<module>:1
+1 1 16 16
+2 1 22 22
+8 1 36 36
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+8 1 2965 2965
+10 1 13 13
+12 1 10 10
+19 1 15 15
+20 1 10 10
+24 648 4705 7
+25 4 28 7
+26 4 24 6
+27 4 24 6
+28 4 24 6
+29 4 24 6
+30 4 24 6
+31 4 23 5
+32 4 25 6
+33 4 23 5
+34 4 24 6
+35 4 24 6
+36 4 24 6
+37 4 25 6
+38 4 24 6
+39 4 24 6
+40 4 24 6
+41 4 24 6
+42 4 24 6
+43 4 24 6
+44 4 24 6
+45 4 24 6
+46 4 24 6
+47 4 24 6
+48 4 24 6
+49 4 24 6
+50 4 24 6
+51 4 24 6
+52 4 24 6
+53 4 24 6
+54 4 24 6
+55 4 23 5
+56 4 24 6
+57 4 25 6
+58 4 25 6
+59 4 24 6
+60 4 24 6
+61 4 25 6
+62 4 24 6
+63 4 24 6
+64 4 24 6
+65 4 25 6
+66 4 25 6
+67 4 25 6
+68 4 23 5
+69 4 25 6
+70 4 23 5
+71 4 24 6
+72 4 25 6
+73 4 24 6
+74 4 23 5
+75 4 25 6
+76 4 26 6
+77 4 25 6
+78 4 25 6
+79 4 23 5
+80 4 24 6
+81 4 24 6
+82 4 24 6
+83 4 25 6
+84 4 24 6
+85 4 25 6
+86 4 24 6
+87 4 24 6
+88 4 25 6
+89 4 24 6
+90 4 25 6
+91 4 25 6
+92 4 25 6
+93 4 25 6
+94 4 25 6
+95 4 26 6
+96 4 25 6
+97 4 24 6
+98 4 24 6
+99 4 24 6
+100 4 24 6
+101 4 24 6
+102 4 24 6
+103 4 25 6
+104 4 24 6
+105 4 25 6
+106 4 24 6
+107 4 24 6
+108 4 24 6
+109 4 25 6
+110 4 24 6
+111 4 25 6
+112 4 24 6
+113 4 25 6
+114 4 25 6
+115 4 24 6
+116 4 25 6
+117 4 25 6
+118 4 25 6
+119 4 24 6
+120 4 25 6
+121 4 24 6
+122 4 25 6
+123 4 24 6
+124 4 24 6
+125 4 25 6
+126 4 24 6
+127 4 24 6
+128 4 24 6
+129 4 25 6
+130 4 24 6
+131 4 24 6
+132 4 28 7
+133 4 24 6
+134 4 24 6
+135 4 25 6
+136 4 25 6
+137 4 25 6
+138 4 24 6
+139 4 25 6
+140 4 25 6
+141 4 24 6
+142 4 25 6
+143 4 24 6
+144 4 24 6
+145 4 24 6
+146 4 24 6
+147 4 25 6
+148 4 24 6
+149 4 25 6
+150 4 23 5
+151 4 24 6
+152 4 23 5
+153 4 25 6
+154 4 24 6
+155 4 25 6
+156 4 25 6
+157 4 25 6
+158 4 23 5
+159 4 25 6
+160 4 25 6
+161 4 24 6
+162 4 23 5
+163 4 25 6
+164 4 23 5
+165 4 25 6
+166 4 25 6
+167 4 25 6
+168 4 24 6
+169 4 24 6
+170 4 24 6
+171 4 26 6
+172 4 24 6
+173 4 25 6
+174 4 24 6
+175 4 25 6
+176 4 24 6
+177 4 25 6
+178 4 24 6
+179 4 24 6
+180 4 27 6
+181 4 24 6
+182 4 24 6
+183 4 25 6
+184 4 24 6
+185 4 24 6
+186 3 18 6
+187 1 6 6
+189 1 6 6
+195 1 11 11
+206 1 10 10
+210 1 9 9
+213 1 10 10
+217 1 9 9
+220 1 18 18
+221 1 10 10
+227 1 13 13
+232 1 10 10
+236 1 10 10
+243 1 45 45
+247 1 10 10
+248 1 11 11
+252 1 10 10
+253 1 10 10
+257 1 12 12
+258 1 10 10
+262 1 14 14
+263 1 10 10
+267 1 10 10
+271 1 10 10
+fl=/usr/lib/python3.10/encodings/__init__.py
+fn=search_function:71
+71 1 6 6
+74 1 8 8
+75 1 5 5
+85 1 13 13
+cfl=/usr/lib/python3.10/encodings/__init__.py
+cfn=normalize_encoding:43
+calls=1 43
+85 1 110 110
+86 2 10 5
+87 1 5 5
+88 1 4 4
+92 1 4 4
+93 1 4 4
+94 1 4 4
+96 1 4 4
+99 2 27 13
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+99 1 29608 29608
+100 1 4 4
+106 1 4 4
+110 1 4 4
+111 1 4 4
+116 1 3 3
+122 1 10 10
+cfl=/usr/lib/python3.10/encodings/idna.py
+cfn=getregentry:300
+calls=1 300
+122 1 102 102
+123 1 5 5
+139 1 4 4
+143 1 5 5
+144 1 6 6
+145 1 4 4
+146 1 4 4
+153 1 5 5
+fn=normalize_encoding:43
+43 1 5 5
+55 1 8 8
+58 1 5 5
+59 1 4 4
+60 5 17 3
+61 4 13 3
+62 4 12 3
+64 4 12 3
+65 4 13 3
+66 4 13 3
+69 1 3 3
+fl=/usr/lib/python3.10/email/_parseaddr.py
+fn=quote:197
+197 1 3 3
+204 1 9 9
+fl=/usr/lib/python3.10/codecs.py
+fn=__new__:94
+94 1 3 3
+97 1 10 10
+98 1 4 4
+99 1 4 4
+100 1 3 3
+101 1 5 5
+102 1 4 4
+103 1 3 3
+104 1 6 6
+105 1 4 4
+107 1 3 3
+fl=<string>
+fn=<module>:1
+1 2 12 6
+fl=/usr/lib/python3.10/copy.py
+fn=<module>:1
+1 2 17 8
+51 1 5 5
+52 1 5 5
+53 1 8 8
+55 1 28 28
+cfl=/usr/lib/python3.10/copy.py
+cfn=Error:55
+calls=1 55
+55 1 11 11
+57 1 5 5
+59 1 5 5
+60 1 16 16
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+60 1 4152 4152
+61 1 6 6
+62 1 5 5
+64 1 5 5
+66 1 5 5
+105 1 5 5
+107 1 5 5
+109 20 74 3
+110 1 5 5
+111 1 5 5
+112 1 5 5
+113 18 68 3
+114 1 3 3
+115 1 5 5
+116 1 5 5
+118 1 6 6
+119 1 5 5
+120 1 6 6
+121 1 5 5
+123 1 5 5
+126 1 5 5
+128 1 5 5
+180 1 6 6
+182 1 5 5
+184 1 5 5
+185 1 5 5
+186 1 5 5
+187 1 6 6
+188 1 6 6
+189 1 5 5
+190 1 4 4
+191 1 5 5
+192 1 5 5
+193 1 5 5
+194 1 5 5
+195 1 5 5
+196 1 5 5
+197 1 4 4
+198 1 5 5
+199 1 5 5
+201 1 5 5
+208 1 5 5
+210 1 5 5
+225 1 4 4
+227 1 5 5
+233 1 5 5
+234 1 6 6
+237 1 5 5
+239 1 5 5
+241 1 4 4
+243 1 5 5
+259 1 5 5
+260 1 5 5
+261 1 5 5
+304 1 5 5
+fn=Error:55
+55 2 8 4
+56 1 2 2
+fl=/usr/lib/python3.10/email/headerregistry.py
+fn=__getitem__:590
+590 9 26 2
+591 9 40 4
+592 9 161 17
+fn=__call__:594
+594 5 13 2
+604 5 77 15
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=__getitem__:590
+calls=5 590
+604 5 99 19
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=__new__:190
+calls=5 190
+604 5 6151 1230
+fn=__new__:190
+190 5 16 3
+191 5 18 3
+192 5 53 10
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=parse:265
+calls=1 265
+192 1 744 744
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=parse:446
+calls=2 446
+192 2 3992 1996
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=parse:510
+calls=1 510
+192 1 426 426
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=parse:408
+calls=1 408
+192 1 396 396
+193 5 42 8
+cfl=/usr/lib/python3.10/email/utils.py
+cfn=_has_surrogates:51
+calls=5 51
+193 5 59 11
+195 5 19 3
+196 5 17 3
+197 5 56 11
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=init:200
+calls=1 200
+197 1 17 17
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=init:472
+calls=2 472
+197 2 185 92
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=init:516
+calls=1 516
+197 1 49 49
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=init:420
+calls=1 420
+197 1 38 38
+198 5 16 3
+fn=parse:265
+265 1 4 4
+267 1 14 14
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=get_unstructured:1087
+calls=1 1087
+267 1 623 623
+268 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__str__:125
+calls=1 125
+268 1 92 92
+fn=init:200
+200 5 16 3
+201 5 19 3
+202 5 16 3
+203 5 18 3
+fn=parse:446
+446 2 6 3
+448 2 22 11
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=parse_content_type_header:2621
+calls=2 2621
+448 2 1933 966
+449 2 23 11
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__str__:125
+calls=2 125
+449 2 772 386
+450 2 20 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=all_defects:136
+calls=2 136
+450 2 619 309
+451 2 30 15
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=params:813
+calls=2 813
+451 2 46 23
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=params:726
+calls=1 726
+451 1 8 8
+455 4 27 6
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=<dictcomp>:455
+calls=2 455
+455 2 424 212
+457 2 18 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=params:813
+calls=2 813
+457 2 38 19
+fn=<dictcomp>:455
+455 7 45 6
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=params:726
+calls=2 726
+455 2 343 171
+cfl=/usr/lib/python3.10/email/utils.py
+cfn=_sanitize:64
+calls=1 64
+455 1 15 15
+456 1 8 8
+cfl=/usr/lib/python3.10/email/utils.py
+cfn=_sanitize:64
+calls=1 64
+456 1 9 9
+457 1 3 3
+fn=init:472
+472 2 7 3
+473 2 23 11
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=init:459
+calls=2 459
+473 2 67 33
+474 2 23 11
+cfl=/usr/lib/python3.10/email/utils.py
+cfn=_sanitize:64
+calls=2 64
+474 2 24 12
+475 2 19 9
+cfl=/usr/lib/python3.10/email/utils.py
+cfn=_sanitize:64
+calls=2 64
+475 2 19 9
+fn=init:459
+459 2 6 3
+460 2 8 4
+461 2 25 12
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=init:200
+calls=2 200
+461 2 27 13
+fn=name:205
+205 3 8 2
+207 3 9 3
+fn=parse:510
+510 1 3 3
+512 1 12 12
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=parse_content_transfer_encoding_header:2708
+calls=1 2708
+512 1 254 254
+513 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__str__:125
+calls=1 125
+513 1 62 62
+514 1 9 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=all_defects:136
+calls=1 136
+514 1 73 73
+fn=init:516
+516 1 3 3
+517 1 10 10
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=init:200
+calls=1 200
+517 1 13 13
+518 1 11 11
+cfl=/usr/lib/python3.10/email/utils.py
+cfn=_sanitize:64
+calls=1 64
+518 1 10 10
+fn=parse:408
+408 1 3 3
+410 1 12 12
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=parse_mime_version:2149
+calls=1 2149
+410 1 211 211
+411 1 10 10
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=__str__:125
+calls=1 125
+411 1 52 52
+412 1 9 9
+cfl=/usr/lib/python3.10/email/_header_value_parser.py
+cfn=all_defects:136
+calls=1 136
+412 1 77 77
+413 1 4 4
+414 1 3 3
+415 1 3 3
+416 1 5 5
+fn=init:420
+420 1 3 3
+421 1 4 4
+422 1 3 3
+423 1 3 3
+424 1 9 9
+cfl=/usr/lib/python3.10/email/headerregistry.py
+cfn=init:200
+calls=1 200
+424 1 13 13
+fl=/usr/lib/python3.10/email/message.py
+fn=__init__:947
+947 1 3 3
+948 1 9 9
+949 1 6 6
+950 1 3 3
+951 1 11 11
+cfl=/usr/lib/python3.10/email/message.py
+cfn=__init__:120
+calls=1 120
+951 1 38 38
+fn=__init__:120
+120 1 3 3
+121 1 4 4
+122 1 3 3
+123 1 3 3
+124 1 5 5
+125 1 3 3
+127 1 5 5
+128 1 4 4
+130 1 3 3
+fn=__setitem__:393
+393 4 16 4
+399 4 42 10
+cfl=/usr/lib/python3.10/email/policy.py
+cfn=header_max_count:100
+calls=4 100
+399 4 189 47
+400 4 15 3
+401 4 16 4
+402 4 14 3
+403 10 35 3
+404 6 20 3
+409 4 45 11
+cfl=/usr/lib/python3.10/email/policy.py
+cfn=header_store_parse:131
+calls=4 131
+409 4 3177 794
+fn=set_content:1170
+1170 1 3 3
+1171 1 14 14
+cfl=/usr/lib/python3.10/email/message.py
+cfn=set_content:1098
+calls=1 1098
+1171 1 6819 6819
+1172 1 9 9
+cfl=/usr/lib/python3.10/email/message.py
+cfn=__contains__:423
+calls=1 423
+1172 1 34 34
+1173 1 12 12
+cfl=/usr/lib/python3.10/email/message.py
+cfn=__setitem__:393
+calls=1 393
+1173 1 645 645
+fn=set_content:1098
+1098 1 3 3
+1099 1 4 4
+1100 1 3 3
+1101 1 13 13
+cfl=/usr/lib/python3.10/email/contentmanager.py
+cfn=set_content:30
+calls=1 30
+1101 1 6795 6795
+fn=get_content_maintype:588
+588 1 3 3
+594 1 11 11
+cfl=/usr/lib/python3.10/email/message.py
+cfn=get_content_type:564
+calls=1 564
+594 1 65 65
+595 1 4 4
+fn=get_content_type:564
+564 1 5 5
+577 1 4 4
+578 1 10 10
+cfl=/usr/lib/python3.10/email/message.py
+cfn=get:462
+calls=1 462
+578 1 23 23
+579 1 3 3
+581 1 11 11
+cfl=/usr/lib/python3.10/email/message.py
+cfn=get_default_type:606
+calls=1 606
+581 1 6 6
+fn=get:462
+462 4 12 3
+468 4 16 4
+469 8 25 3
+470 7 24 3
+471 3 25 8
+cfl=/usr/lib/python3.10/email/policy.py
+cfn=header_fetch_parse:150
+calls=3 150
+471 3 65 21
+472 1 3 3
+fn=get_default_type:606
+606 1 3 3
+613 1 3 3
+fn=clear_content:1162
+1162 1 4 4
+1163 1 13 13
+cfl=/usr/lib/python3.10/email/message.py
+cfn=<listcomp>:1163
+calls=1 1163
+1163 1 22 22
+1165 1 3 3
+fn=<listcomp>:1163
+1163 4 18 4
+1164 1 3 3
+fn=set_payload:303
+303 1 3 3
+309 1 4 4
+310 1 4 4
+311 1 4 4
+312 1 3 3
+fn=set_param:701
+701 1 5 5
+719 1 5 5
+722 1 12 12
+cfl=/usr/lib/python3.10/email/message.py
+cfn=__contains__:423
+calls=1 423
+722 1 28 28
+725 1 14 14
+cfl=/usr/lib/python3.10/email/message.py
+cfn=get:462
+calls=1 462
+725 1 56 56
+726 1 12 12
+cfl=/usr/lib/python3.10/email/message.py
+cfn=get_param:667
+calls=1 667
+726 1 323 323
+727 1 4 4
+730 2 39 19
+731 1 12 12
+cfl=/usr/lib/python3.10/email/message.py
+cfn=_formatparam:39
+calls=1 39
+731 1 53 53
+745 1 9 9
+cfl=/usr/lib/python3.10/email/message.py
+cfn=get:462
+calls=1 462
+745 1 47 47
+746 1 4 4
+747 1 15 15
+cfl=/usr/lib/python3.10/email/message.py
+cfn=replace_header:545
+calls=1 545
+747 1 3317 3317
+fn=__contains__:423
+423 3 13 4
+424 3 29 9
+cfl=/usr/lib/python3.10/email/message.py
+cfn=<listcomp>:424
+calls=3 424
+424 3 44 14
+fn=<listcomp>:424
+424 13 44 3
+fn=get_param:667
+667 1 4 4
+691 1 10 10
+cfl=/usr/lib/python3.10/email/message.py
+cfn=__contains__:423
+calls=1 423
+691 1 24 24
+693 2 16 8
+cfl=/usr/lib/python3.10/email/message.py
+cfn=_get_params_preserve:624
+calls=1 624
+693 1 259 259
+694 1 4 4
+699 1 3 3
+fn=_get_params_preserve:624
+624 1 3 3
+627 1 4 4
+628 1 10 10
+cfl=/usr/lib/python3.10/email/message.py
+cfn=get:462
+calls=1 462
+628 1 46 46
+629 1 4 4
+631 1 4 4
+632 2 15 7
+cfl=/usr/lib/python3.10/email/message.py
+cfn=_parseparam:73
+calls=1 73
+632 1 89 89
+633 1 3 3
+634 1 11 11
+637 1 4 4
+639 1 4 4
+640 1 4 4
+641 1 4 4
+642 1 11 11
+cfl=/usr/lib/python3.10/email/utils.py
+cfn=decode_params:260
+calls=1 260
+642 1 30 30
+643 1 5 5
+fn=_parseparam:73
+73 1 18 18
+75 1 5 5
+76 1 3 3
+77 2 8 4
+78 1 4 4
+79 1 4 4
+80 1 5 5
+82 1 13 13
+83 1 4 4
+84 1 5 5
+85 1 4 4
+88 1 4 4
+89 1 4 4
+90 1 3 3
+fn=_formatparam:39
+39 1 4 4
+48 1 4 4
+52 1 4 4
+58 1 3 3
+59 1 4 4
+66 1 3 3
+67 1 14 14
+cfl=/usr/lib/python3.10/email/_parseaddr.py
+cfn=quote:197
+calls=1 197
+67 1 13 13
+fn=replace_header:545
+545 1 3 3
+552 1 4 4
+553 2 12 6
+554 2 7 3
+555 1 10 10
+cfl=/usr/lib/python3.10/email/policy.py
+cfn=header_store_parse:131
+calls=1 131
+555 1 3273 3273
+556 1 5 5
+fl=/usr/lib/python3.10/smtplib.py
+fn=<module>:1
+1 1 32 32
+3 1 25 25
+44 1 17 17
+45 1 16 16
+46 1 15 15
+47 1 16 16
+48 1 15 15
+49 1 54 54
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+49 1 17108 17108
+50 1 16 16
+51 1 55 55
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+51 1 21060 21060
+52 1 16 16
+53 1 16 16
+54 1 17 17
+55 1 16 16
+57 1 14 14
+62 1 14 14
+63 1 14 14
+64 1 20 20
+65 1 14 14
+66 1 15 15
+67 1 13 13
+69 1 51 51
+cfl=/usr/lib/python3.10/re.py
+cfn=compile:249
+calls=1 249
+69 1 4188 4188
+72 1 55 55
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTPException:72
+calls=1 72
+72 1 21 21
+75 1 67 67
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTPNotSupportedError:75
+calls=1 75
+75 1 22 22
+82 1 99 99
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTPServerDisconnected:82
+calls=1 82
+82 1 22 22
+90 1 51 51
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTPResponseException:90
+calls=1 90
+90 1 34 34
+104 1 50 50
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTPSenderRefused:104
+calls=1 104
+104 1 25 25
+117 1 53 53
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTPRecipientsRefused:117
+calls=1 117
+117 1 24 24
+130 1 49 49
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTPDataError:130
+calls=1 130
+130 1 27 27
+133 1 51 51
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTPConnectError:133
+calls=1 133
+133 1 27 27
+136 1 46 46
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTPHeloError:136
+calls=1 136
+136 1 18 18
+139 1 45 45
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTPAuthenticationError:139
+calls=1 139
+139 1 20 20
+146 1 14 14
+159 1 14 14
+167 1 14 14
+176 1 14 14
+179 1 16 16
+182 1 13 13
+183 1 56 56
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+183 1 115610 115610
+187 1 16 16
+190 1 75 75
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTP:190
+calls=1 190
+190 1 552 552
+1012 1 15 15
+1014 1 50 50
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=SMTP_SSL:1014
+calls=1 1014
+1014 1 52 52
+1061 1 15 15
+1066 1 14 14
+1068 1 47 47
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=LMTP:1068
+calls=1 1068
+1068 1 45 45
+1120 1 15 15
+fn=SMTPException:72
+72 2 18 9
+73 1 3 3
+fn=SMTPNotSupportedError:75
+75 2 19 9
+76 1 2 2
+fn=SMTPServerDisconnected:82
+82 2 20 10
+83 1 2 2
+fn=SMTPResponseException:90
+90 2 23 11
+91 1 3 3
+99 1 7 7
+fn=SMTPSenderRefused:104
+104 2 18 9
+105 1 3 3
+111 1 3 3
+fn=SMTPRecipientsRefused:117
+117 2 17 8
+118 1 3 3
+125 1 4 4
+fn=SMTPDataError:130
+130 2 24 12
+131 1 3 3
+fn=SMTPConnectError:133
+133 2 19 9
+134 1 7 7
+fn=SMTPHeloError:136
+136 2 16 8
+137 1 1 1
+fn=SMTPAuthenticationError:139
+139 2 18 9
+140 1 2 2
+fn=SMTP:190
+190 2 32 16
+191 1 6 6
+219 1 10 10
+221 1 10 10
+222 1 10 10
+223 1 9 9
+224 1 9 9
+225 1 10 10
+226 1 10 10
+227 1 11 11
+229 2 20 10
+230 1 10 10
+231 1 10 10
+277 1 9 9
+280 1 10 10
+290 1 10 10
+299 1 10 10
+305 1 9 9
+315 1 10 10
+348 1 10 10
+367 1 9 9
+380 1 10 10
+429 1 10 10
+435 1 10 10
+445 1 10 10
+496 1 10 10
+500 1 9 9
+506 1 13 13
+511 1 10 10
+523 1 10 10
+527 1 10 10
+548 1 10 10
+556 1 10 10
+585 1 13 13
+590 1 10 10
+592 1 10 10
+599 1 10 10
+616 1 10 10
+664 1 10 10
+673 1 10 10
+678 1 11 11
+686 1 10 10
+752 1 11 11
+808 2 20 10
+809 1 10 10
+912 2 16 8
+913 1 10 10
+989 1 6 6
+1002 1 10 10
+fn=__init__:229
+229 1 9 9
+247 1 5 5
+248 1 6 6
+249 1 4 4
+250 1 5 5
+251 1 4 4
+252 1 4 4
+254 1 4 4
+255 1 14 14
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=connect:315
+calls=1 315
+255 1 31453 31453
+fn=_get_socket:305
+305 1 3 3
+308 1 4 4
+310 1 4 4
+312 2 17 8
+cfl=/usr/lib/python3.10/socket.py
+cfn=create_connection:808
+calls=1 808
+312 1 31367 31367
+313 1 3 3
+fn=connect:315
+315 1 4 4
+327 1 3 3
+330 1 6 6
+331 1 5 5
+332 1 4 4
+338 1 5 5
+339 1 4 4
+340 1 4 4
+341 1 12 12
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=_get_socket:305
+calls=1 305
+341 1 31401 31401
+fn=SMTP_SSL:1014
+1014 2 20 10
+1015 1 3 3
+1028 1 5 5
+1030 2 8 4
+1031 1 3 3
+1032 1 4 4
+1033 1 3 3
+1053 1 3 3
+fn=LMTP:1068
+1068 2 18 9
+1069 1 4 4
+1082 1 4 4
+1084 2 9 4
+1085 1 4 4
+1090 1 4 4
+fl=/usr/lib/python3.10/enum.py
+fn=__and__:986
+986 7 20 2
+987 7 38 5
+989 7 107 15
+cfl=/usr/lib/python3.10/enum.py
+cfn=__call__:359
+calls=14 359
+989 14 448 32
+fn=__call__:359
+359 24 74 3
+384 24 83 3
+385 18 196 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__new__:678
+calls=18 678
+385 18 255 14
+387 12 103 8
+cfl=/usr/lib/python3.10/enum.py
+cfn=_create_:483
+calls=6 483
+387 6 40962 6827
+388 6 20 3
+389 6 18 3
+390 6 19 3
+391 6 16 2
+392 6 18 3
+393 6 19 3
+fn=__new__:678
+678 18 58 3
+682 18 66 3
+687 18 61 3
+688 18 68 3
+fn=value:801
+801 3 8 2
+804 3 12 4
+fn=_convert_:536
+536 6 90 15
+545 6 38 6
+546 6 24 4
+547 6 22 3
+553 12 92 7
+cfl=/usr/lib/python3.10/enum.py
+cfn=<listcomp>:553
+calls=6 553
+553 6 16573 2762
+555 6 23 3
+557 6 20 3
+559 6 337 56
+cfl=/usr/lib/python3.10/enum.py
+cfn=<lambda>:559
+calls=66 559
+559 66 373 5
+563 6 81 13
+cfl=/usr/lib/python3.10/enum.py
+cfn=__call__:359
+calls=6 359
+563 6 41224 6870
+564 6 59 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=6 470
+564 6 78 13
+565 6 108 18
+cfl=/usr/lib/python3.10/enum.py
+cfn=__members__:451
+calls=6 451
+565 6 40 6
+566 6 23 3
+567 6 21 3
+fn=<listcomp>:553
+553 1602 4642 2
+554 66 192 2
+555 762 2200 2
+556 762 5419 7
+cfl=/usr/lib/python3.10/ssl.py
+cfn=<lambda>:124
+calls=127 124
+556 127 694 5
+cfl=/usr/lib/python3.10/ssl.py
+cfn=<lambda>:129
+calls=127 129
+556 127 684 5
+cfl=/usr/lib/python3.10/ssl.py
+cfn=<lambda>:134
+calls=127 134
+556 127 684 5
+cfl=/usr/lib/python3.10/ssl.py
+cfn=<lambda>:139
+calls=127 139
+556 127 682 5
+cfl=/usr/lib/python3.10/ssl.py
+cfn=<lambda>:144
+calls=127 144
+556 127 686 5
+cfl=/usr/lib/python3.10/ssl.py
+cfn=<lambda>:149
+calls=127 149
+556 127 684 5
+fn=<lambda>:559
+559 132 373 2
+fn=_create_:483
+483 6 44 7
+495 6 31 5
+496 6 28 4
+497 6 75 12
+cfl=/usr/lib/python3.10/enum.py
+cfn=_get_mixins_:579
+calls=6 579
+497 6 530 88
+498 6 67 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__prepare__:165
+calls=6 165
+498 6 1770 295
+501 6 30 5
+503 6 31 5
+512 72 285 3
+513 66 266 4
+516 66 257 3
+517 66 635 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=66 89
+517 66 8612 130
+518 6 97 16
+cfl=/usr/lib/python3.10/enum.py
+cfn=__new__:180
+calls=6 180
+518 6 27955 4659
+522 6 27 4
+527 6 24 4
+530 6 59 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=6 470
+530 6 79 13
+531 6 26 4
+534 6 25 4
+fn=_get_mixins_:579
+579 28 108 3
+587 28 105 3
+590 28 108 3
+617 28 97 3
+618 28 108 3
+621 28 253 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=_find_data_type:590
+calls=28 590
+621 28 1433 51
+622 28 100 3
+624 28 91 3
+fn=_find_data_type:590
+590 28 92 3
+591 28 110 3
+592 58 190 3
+593 30 100 3
+594 34 122 3
+595 32 103 3
+596 2 5 2
+597 30 97 3
+598 28 93 3
+599 26 88 3
+600 26 87 3
+601 2 7 3
+602 2 8 4
+604 2 7 3
+605 2 41 20
+608 28 92 3
+610 28 87 3
+611 28 94 3
+fn=__prepare__:165
+165 11 97 8
+168 11 105 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=_check_for_existing_members:569
+calls=11 569
+168 11 463 42
+170 11 103 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__init__:82
+calls=11 82
+170 11 229 20
+171 11 40 3
+173 11 101 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=_get_mixins_:579
+calls=11 579
+173 11 940 85
+174 11 38 3
+175 22 144 6
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=11 89
+175 11 1058 96
+176 11 34 3
+178 11 35 3
+fn=_check_for_existing_members:569
+569 11 34 3
+571 23 75 3
+572 60 186 3
+573 48 166 3
+fn=__init__:82
+82 11 31 2
+83 11 47 4
+84 11 35 3
+85 11 43 3
+86 11 37 3
+87 11 33 3
+fn=__setitem__:89
+89 169 551 3
+98 169 1465 8
+cfl=/usr/lib/python3.10/enum.py
+cfn=_is_private:44
+calls=169 44
+98 169 3761 22
+106 169 1390 8
+cfl=/usr/lib/python3.10/enum.py
+cfn=_is_sunder:33
+calls=169 33
+106 169 2698 15
+107 11 41 3
+112 11 40 3
+114 11 39 3
+116 11 45 4
+129 158 1295 8
+cfl=/usr/lib/python3.10/enum.py
+cfn=_is_dunder:22
+calls=158 22
+129 158 2506 15
+130 21 73 3
+132 137 484 3
+135 137 460 3
+137 137 1103 8
+cfl=/usr/lib/python3.10/enum.py
+cfn=_is_descriptor:12
+calls=137 12
+137 137 2317 16
+138 137 478 3
+141 137 474 3
+151 137 478 3
+152 137 469 3
+153 169 678 4
+fn=_is_private:44
+44 169 502 2
+46 169 588 3
+47 169 533 3
+48 269 787 2
+49 169 530 3
+50 100 327 3
+56 169 490 2
+fn=_is_sunder:33
+33 169 457 2
+37 169 485 2
+38 370 1082 2
+39 169 537 3
+40 32 102 3
+41 11 32 2
+fn=_is_dunder:22
+22 170 459 2
+26 170 477 2
+27 372 1090 2
+28 170 576 3
+29 32 94 2
+30 32 92 2
+fn=_is_descriptor:12
+12 137 360 2
+16 137 378 2
+17 274 794 2
+18 137 393 2
+19 137 391 2
+fn=__new__:180
+180 11 138 12
+187 11 81 7
+188 11 72 6
+189 22 128 5
+190 11 71 6
+191 11 143 13
+cfl=/usr/lib/python3.10/enum.py
+cfn=_get_mixins_:579
+calls=11 579
+191 11 935 85
+192 22 212 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=_find_new_:626
+calls=11 626
+192 11 1992 181
+193 11 63 5
+198 11 132 12
+cfl=/usr/lib/python3.10/enum.py
+cfn=<dictcomp>:198
+calls=11 198
+198 11 488 44
+199 148 748 5
+200 137 746 5
+203 11 58 5
+206 11 82 7
+207 11 58 5
+212 11 60 5
+213 7 83 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setitem__:89
+calls=7 89
+213 7 704 100
+215 11 270 24
+216 11 133 12
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=11 470
+216 11 185 16
+217 11 124 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=11 470
+217 11 151 13
+218 11 122 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=11 470
+218 11 144 13
+222 22 188 8
+cfl=/usr/lib/python3.10/enum.py
+cfn=<setcomp>:222
+calls=11 222
+222 11 16556 1505
+223 11 104 9
+229 11 122 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=11 470
+229 11 155 14
+241 11 63 5
+242 11 54 4
+243 11 53 4
+245 11 290 26
+cfl=/usr/lib/python3.10/enum.py
+cfn=<genexpr>:245
+calls=35 245
+245 35 210 6
+246 1 4 4
+255 1 9 9
+256 1 7 7
+257 1 6 6
+258 1 5 5
+260 1 45 45
+cfl=/usr/lib/python3.10/enum.py
+cfn=<genexpr>:260
+calls=5 260
+260 5 32 6
+264 1 5 5
+266 1 5 5
+267 1 5 5
+268 1 5 5
+269 1 6 6
+270 1 5 5
+271 1 13 13
+cfl=/usr/lib/python3.10/enum.py
+cfn=_make_class_unpicklable:58
+calls=1 58
+271 1 56 56
+276 148 669 4
+277 137 621 4
+278 137 634 4
+279 137 615 4
+282 137 624 4
+284 137 600 4
+289 137 684 4
+cfl=/usr/lib/python3.10/ssl.py
+cfn=__new__:456
+calls=2 456
+289 2 64 32
+290 137 638 4
+291 137 620 4
+294 137 629 4
+cfl=/usr/lib/python3.10/ssl.py
+cfn=__new__:456
+calls=2 456
+294 2 39 19
+295 137 611 4
+296 137 623 4
+297 137 630 4
+298 137 637 4
+301 1480 6641 4
+302 1345 6055 4
+303 2 9 4
+304 2 12 6
+307 135 651 4
+310 137 612 4
+311 137 1443 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=137 470
+311 137 1883 13
+313 137 673 4
+314 137 603 4
+318 137 679 4
+326 55 236 4
+327 44 198 4
+329 44 211 4
+330 44 197 4
+331 44 202 4
+332 44 192 4
+333 1 11 11
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=1 470
+333 1 13 13
+337 11 46 4
+340 11 52 4
+342 11 117 10
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=11 470
+342 11 172 15
+345 11 52 4
+351 11 48 4
+fn=_find_new_:626
+626 11 46 4
+638 11 49 4
+641 11 38 3
+643 11 41 3
+646 22 72 3
+647 44 146 3
+648 33 205 6
+cfl=/usr/lib/python3.10/enum.py
+cfn=__getattr__:423
+calls=11 423
+648 11 443 40
+649 66 225 3
+650 33 108 3
+651 33 103 3
+652 33 110 3
+653 33 109 3
+655 11 32 2
+656 11 37 3
+657 22 73 3
+658 11 35 3
+665 11 37 3
+668 11 38 3
+669 11 34 3
+fn=__getattr__:423
+423 12 55 4
+432 12 98 8
+cfl=/usr/lib/python3.10/enum.py
+cfn=_is_dunder:22
+calls=12 22
+432 12 285 23
+433 11 53 4
+434 1 2 2
+435 1 4 4
+436 1 4 4
+437 1 5 5
+fn=<dictcomp>:198
+198 159 488 3
+fn=__setattr__:470
+470 208 704 3
+478 208 784 3
+479 208 660 3
+481 208 777 3
+fn=<setcomp>:222
+222 2874 8265 2
+223 80 229 2
+224 1415 4069 2
+225 1357 3992 2
+fn=<genexpr>:245
+245 60 210 3
+fn=__members__:451
+451 7 41 5
+459 7 24 3
+fn=<genexpr>:260
+260 10 32 3
+fn=_make_class_unpicklable:58
+58 1 5 5
+62 1 4 4
+64 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=1 470
+64 1 14 14
+65 1 9 9
+cfl=/usr/lib/python3.10/enum.py
+cfn=__setattr__:470
+calls=1 470
+65 1 13 13
+fl=<string>_0
+fn=<module>:1
+1 2 12 6
+fn=<lambda>:1
+1 8 27 3
+fl=./send_reminders.py
+fn=<module>:1
+1 1 10 10
+3 1 13 13
+4 1 5 5
+5 1 16 16
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+5 1 164895 164895
+6 1 9 9
+8 1 4 4
+15 1 4 4
+19 1 4 4
+34 1 4 4
+43 1 4 4
+55 1 4 4
+56 1 30 30
+cfl=./send_reminders.py
+cfn=main:43
+calls=1 43
+56 1 78656 78656
+fn=dow:15
+15 1 3 3
+16 1 26 26
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load:1022
+calls=1 1022
+16 1 17553 17553
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=_strptime_datetime:565
+calls=1 565
+16 1 20737 20737
+17 1 18 18
+fn=message_template:19
+19 1 3 3
+20 1 12 12
+cfl=/usr/lib/python3.10/email/message.py
+cfn=__init__:947
+calls=1 947
+20 1 72 72
+21 1 12 12
+cfl=./send_reminders.py
+cfn=dow:15
+calls=1 15
+21 1 38339 38339
+22 1 13 13
+cfl=/usr/lib/python3.10/email/message.py
+cfn=__setitem__:393
+calls=1 393
+22 1 1008 1008
+23 4 26 6
+cfl=/usr/lib/python3.10/email/message.py
+cfn=set_content:1170
+calls=1 1170
+23 1 7540 7540
+27 1 3 3
+28 2 5 2
+32 1 3 3
+fn=send_message:34
+34 1 3 3
+35 1 16 16
+cfl=/usr/lib/python3.10/smtplib.py
+cfn=__init__:229
+calls=1 229
+35 1 31511 31511
+fn=main:43
+43 1 4 4
+44 1 4 4
+47 1 4 4
+48 1 7 7
+49 1 12 12
+cfl=./send_reminders.py
+cfn=message_template:19
+calls=1 19
+49 1 47043 47043
+50 1 14 14
+cfl=./send_reminders.py
+cfn=send_message:34
+calls=1 34
+50 1 31531 31531
+52 1 4 4
+53 1 29 29
+fl=/usr/lib/python3.10/_strptime.py
+fn=<module>:1
+1 2 31 15
+13 1 7 7
+14 1 9 9
+15 1 10 10
+16 1 10 10
+17 1 9 9
+18 1 9 9
+19 1 10 10
+22 1 9 9
+24 1 8 8
+26 1 9 9
+30 1 39 39
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=LocaleTime:30
+calls=1 30
+30 1 94 94
+170 1 37 37
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=TimeRE:170
+calls=1 170
+170 1 39 39
+265 1 9 9
+268 1 32 32
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__init__:173
+calls=1 173
+268 1 13648 13648
+269 1 9 9
+270 1 10 10
+272 1 9 9
+293 1 10 10
+309 1 8 8
+559 1 9 9
+565 1 9 9
+fn=_getlang:26
+26 3 9 3
+28 3 29 9
+cfl=/usr/lib/python3.10/locale.py
+cfn=getlocale:587
+calls=3 587
+28 3 328 109
+fn=LocaleTime:30
+30 2 56 28
+31 1 4 4
+49 1 5 5
+80 1 5 5
+88 1 5 5
+95 1 5 5
+107 1 6 6
+152 1 5 5
+fn=__init__:49
+49 1 3 3
+69 1 9 9
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=_getlang:26
+calls=1 26
+69 1 140 140
+70 1 10 10
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__calc_weekday:80
+calls=1 80
+70 1 374 374
+71 1 10 10
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__calc_month:88
+calls=1 88
+71 1 647 647
+72 1 10 10
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__calc_am_pm:95
+calls=1 95
+72 1 43 43
+73 1 10 10
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__calc_timezone:152
+calls=1 152
+73 1 60 60
+74 1 12 12
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__calc_date_time:107
+calls=1 107
+74 1 904 904
+75 1 9 9
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=_getlang:26
+calls=1 26
+75 1 112 112
+77 1 4 4
+fn=__calc_weekday:80
+80 1 3 3
+83 1 13 13
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=<listcomp>:83
+calls=1 83
+83 1 180 180
+84 1 9 9
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=<listcomp>:84
+calls=1 84
+84 1 159 159
+85 1 4 4
+86 1 4 4
+fn=__calc_month:88
+88 1 3 3
+90 1 15 15
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=<listcomp>:90
+calls=1 90
+90 1 306 306
+91 1 9 9
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=<listcomp>:91
+calls=1 91
+91 1 303 303
+92 1 4 4
+93 1 4 4
+fn=__calc_am_pm:95
+95 1 3 3
+101 1 4 4
+102 3 11 3
+103 2 10 5
+104 2 9 4
+105 1 3 3
+fn=__calc_date_time:107
+107 1 5 5
+115 1 5 5
+116 1 5 5
+117 1 7 7
+118 1 5 5
+119 1 5 5
+120 2 10 5
+121 1 5 5
+122 1 5 5
+123 1 6 6
+124 1 4 4
+125 1 4 4
+127 1 4 4
+128 1 12 12
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=<listcomp>:128
+calls=1 128
+128 1 75 75
+130 4 16 4
+131 3 11 3
+132 63 220 3
+137 60 206 3
+138 60 217 3
+142 3 12 4
+143 3 18 6
+146 3 11 3
+147 3 12 4
+148 1 4 4
+149 1 5 5
+150 1 5 5
+fn=__calc_timezone:152
+152 1 3 3
+156 1 3 3
+157 1 26 26
+160 1 5 5
+161 1 4 4
+162 1 5 5
+163 1 3 3
+166 1 3 3
+167 1 3 3
+fn=TimeRE:170
+170 2 15 7
+171 1 3 3
+173 1 5 5
+219 1 5 5
+238 1 4 4
+261 1 4 4
+fn=__init__:173
+173 1 9 9
+179 1 4 4
+182 1 13 13
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__init__:49
+calls=1 49
+182 1 2363 2363
+183 1 4 4
+184 19 82 4
+186 1 5 5
+187 1 3 3
+188 1 3 3
+189 1 3 3
+190 1 3 3
+191 1 2 2
+192 1 3 3
+193 1 3 3
+194 1 3 3
+195 1 3 3
+196 1 3 3
+197 1 3 3
+198 1 2 2
+200 1 3 3
+203 1 3 3
+204 1 3 3
+205 1 13 13
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__seqToRE:219
+calls=1 219
+205 1 226 226
+206 1 10 10
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__seqToRE:219
+calls=1 219
+206 1 202 202
+207 1 11 11
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__seqToRE:219
+calls=1 219
+207 1 310 310
+208 1 10 10
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__seqToRE:219
+calls=1 219
+208 1 307 307
+209 1 10 10
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__seqToRE:219
+calls=1 219
+209 1 82 82
+210 2 16 8
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=__seqToRE:219
+calls=1 219
+210 1 183 183
+212 1 4 4
+213 1 3 3
+214 1 4 4
+215 1 15 15
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=pattern:238
+calls=1 238
+215 1 9287 9287
+216 1 12 12
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=pattern:238
+calls=1 238
+216 1 198 198
+217 1 12 12
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=pattern:238
+calls=1 238
+217 1 191 191
+fn=__seqToRE:219
+219 6 20 3
+228 6 44 7
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=<genexpr>:210
+calls=4 210
+228 4 60 15
+229 6 20 3
+230 6 18 3
+231 6 20 3
+234 6 243 40
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=<genexpr>:234
+calls=49 234
+234 49 841 17
+235 6 21 3
+236 6 20 3
+fn=pattern:238
+238 4 15 3
+245 4 15 3
+249 4 37 9
+cfl=/usr/lib/python3.10/re.py
+cfn=compile:249
+calls=4 249
+249 4 6176 1544
+250 4 58 14
+cfl=/usr/lib/python3.10/re.py
+cfn=_subx:324
+calls=4 324
+250 4 539 134
+251 4 34 8
+cfl=/usr/lib/python3.10/re.py
+cfn=compile:249
+calls=4 249
+251 4 2095 523
+252 4 51 12
+cfl=/usr/lib/python3.10/re.py
+cfn=_subx:324
+calls=4 324
+252 4 460 115
+253 20 63 3
+254 16 56 3
+255 32 108 3
+256 16 51 3
+257 16 51 3
+258 16 50 3
+259 4 23 5
+fn=compile:261
+261 1 4 4
+263 1 18 18
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=pattern:238
+calls=1 238
+263 1 215 215
+cfl=/usr/lib/python3.10/re.py
+cfn=compile:249
+calls=1 249
+263 1 19767 19767
+fn=<listcomp>:83
+83 9 68 7
+cfl=/usr/lib/python3.10/calendar.py
+cfn=__getitem__:77
+calls=7 77
+83 7 112 16
+fn=<listcomp>:84
+84 9 63 7
+cfl=/usr/lib/python3.10/calendar.py
+cfn=__getitem__:77
+calls=7 77
+84 7 96 13
+fn=<listcomp>:90
+90 15 112 7
+cfl=/usr/lib/python3.10/calendar.py
+cfn=__getitem__:58
+calls=13 58
+90 13 194 14
+fn=<listcomp>:91
+91 15 110 7
+cfl=/usr/lib/python3.10/calendar.py
+cfn=__getitem__:58
+calls=13 58
+91 13 192 14
+fn=<listcomp>:128
+128 12 61 5
+129 5 14 2
+fn=<genexpr>:234
+234 98 460 4
+cfl=/usr/lib/python3.10/re.py
+cfn=escape:269
+calls=43 269
+234 43 380 8
+fn=<genexpr>:210
+210 15 46 3
+211 5 14 2
+fn=_strptime:309
+309 1 10 10
+314 3 25 8
+315 2 15 7
+320 2 16 8
+321 1 8 8
+322 3 31 10
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=_getlang:26
+calls=1 26
+322 1 115 115
+323 1 9 9
+324 1 7 7
+328 1 7 7
+330 1 9 9
+331 1 8 8
+332 1 7 7
+333 1 20 20
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=compile:261
+calls=1 261
+333 1 20005 20005
+346 1 9 9
+347 1 16 16
+348 1 8 8
+351 1 8 8
+355 1 8 8
+356 1 7 7
+357 1 7 7
+358 1 6 6
+359 1 7 7
+360 1 15 15
+363 1 7 7
+364 1 6 6
+367 1 8 8
+368 1 8 8
+369 4 27 6
+375 3 17 5
+384 3 19 6
+385 1 7 7
+386 2 10 5
+388 2 12 6
+389 1 6 6
+390 1 5 5
+392 1 6 6
+394 1 7 7
+395 1 6 6
+488 1 5 5
+497 1 6 6
+507 1 6 6
+508 1 6 6
+511 1 6 6
+517 1 6 6
+529 1 7 7
+534 3 20 6
+535 2 12 6
+544 1 5 5
+545 1 7 7
+547 1 7 7
+549 1 6 6
+555 3 18 6
+556 1 6 6
+557 2 11 5
+fn=_strptime_datetime:565
+565 1 5 5
+568 1 17 17
+cfl=/usr/lib/python3.10/_strptime.py
+cfn=_strptime:309
+calls=1 309
+568 1 20695 20695
+569 1 4 4
+570 1 5 5
+571 1 4 4
+579 1 5 5
+fl=<frozen zipimport>
+fn=__init__:64
+64 1 5 5
+65 1 11 11
+68 1 4 4
+70 1 4 4
+73 1 4 4
+74 1 5 5
+75 1 4 4
+76 1 17 17
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat:140
+calls=1 140
+76 1 18 18
+87 1 5 5
+89 1 8 8

@@ -1,0 +1,3 @@
+ERROR this is an error
+ERROR this is also an error
+LOG this is not an error

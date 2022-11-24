@@ -1,0 +1,2 @@
+#!/usr/bin/env vim
+Hello World! Some random shit!

@@ -1,0 +1,16 @@
+[
+    "apple",
+    "banana",
+    12345,
+    67890,
+    {
+        "name": "Sabrina Green",
+        "username": "sgreen",
+        "phone": {
+            "office": "802-867-5309",
+            "cell": "802-867-5310"
+        },
+        "department": "IT Infrastructure",
+        "role": "Systems Administrator"
+    }
+]
